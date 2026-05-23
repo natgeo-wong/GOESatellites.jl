@@ -1,15 +1,15 @@
-using GOES
+using GOESatellites
 using Documenter
 using DocumenterVitepress
 
 makedocs(;
-    modules  = [GOES],
+    modules  = [GOESatellites],
     authors  = "Nathanael Wong <natgeo.wong@outlook.com>",
-    sitename = "GOES.jl",
+    sitename = "GOESatellites.jl",
     doctest  = false,
     warnonly = true,
     format   = DocumenterVitepress.MarkdownVitepress(
-        repo="github.com/natgeo-wong/GOES.jl",
+        repo="github.com/natgeo-wong/GOESatellites.jl",
         devbranch="main",
         devurl = "dev"
     ),
@@ -21,7 +21,7 @@ makedocs(;
 # and for deploying use
 
 DocumenterVitepress.deploydocs(;
-    repo="github.com/natgeo-wong/GOES.jl",
+    repo="github.com/natgeo-wong/GOESatellites.jl",
     target = joinpath(@__DIR__, "build"),
     branch = "gh-pages",
     devbranch="main",

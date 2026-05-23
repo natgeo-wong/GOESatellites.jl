@@ -45,6 +45,6 @@ jobs:
         shell: julia --project=docs --color=yes {0}
         run: |
           using Documenter: DocMeta, doctest
-          using GOES
-          DocMeta.setdocmeta!(GOES, :DocTestSetup, :(using GOES); recursive=true)
-          doctest(GOES)
+          using GOESatellites
+          DocMeta.setdocmeta!(GOESatellites, :DocTestSetup, :(using GOESatellites); recursive=true)
+          doctest(GOESatellites)

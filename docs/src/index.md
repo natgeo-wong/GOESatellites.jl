@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "GOES.jl"
+  name: "GOESatellites.jl"
   text: "Managing GOES Datasets in Julia"
   tagline: Download and manipulate datasets from the Geostationary Operational Environmental Satellites.
   image:
@@ -21,34 +21,34 @@ hero:
       link: /using/download
     - theme: alt
       text: View on Github
-      link: https://github.com/natgeo-wong/GOES.jl
+      link: https://github.com/natgeo-wong/GOESatellites.jl
 
 features:
   - title: Simple and Intuitive
-    details: GOES.jl aims to be simple and intuitive to the user, with basic functions like `download()` and `read()`.
+    details: GOESatellites.jl aims to be simple and intuitive to the user, with basic functions like `download()` and `read()`.
   - title: Region of Interest
-    details: You don't have to download the whole spatial dataset - GOES.jl will subset for your (Geo)Region of interest, saving you time and disk space for small domains.
+    details: You don't have to download the whole spatial dataset - GOESatellites.jl will subset for your (Geo)Region of interest, saving you time and disk space for small domains.
   - title: Comprehensive
-    details: GOES.jl supports hourly, daily, and monthly ERA5 products for both single-level and pressure-level variables.
+    details: GOESatellites.jl supports hourly, daily, and monthly ERA5 products for both single-level and pressure-level variables.
 ---
 ```
 
 ## Introduction
 
-GOES.jl builds upon the [GeoRegions Ecosystem](https://github.com/GeoRegionsEcosystem) to streamline the following processes:
+GOESatellites.jl builds upon the [GeoRegions Ecosystem](https://github.com/GeoRegionsEcosystem) to streamline the following processes:
 * downloads of GOES datasets using Amazon Web Services S3 protocols
 * basic analysis of said datasets
 * perform all the above operations innately over a given geographical region using the [GeoRegions.jl](https://github.com/GeoRegionsEcosystem/GeoRegions.jl) package
 
 ## Installation Instructions
 
-The latest version of GOES.jl can be installed using the Julia package manager (accessed by pressing `]` in the Julia command prompt)
+The latest version of GOESatellites.jl can be installed using the Julia package manager (accessed by pressing `]` in the Julia command prompt)
 ```julia-repl
 julia> ]
 (@v1.10) pkg> add GOES
 ```
 
-You can update `GOES.jl` to the latest version using
+You can update `GOESatellites.jl` to the latest version using
 ```julia-repl
 (@v1.10) pkg> update GOES
 ```
@@ -59,4 +59,4 @@ And if you want to get the latest release without waiting for me to update the J
 ```
 
 ## Getting help
-If you are interested in using `GOES.jl` or are trying to figure out how to use it, please feel free to ask me questions and get in touch!  Please feel free to [open an issue](https://github.com/natgeo-wong/GOES.jl/issues/new) if you have any questions, comments, suggestions, etc!
+If you are interested in using `GOESatellites.jl` or are trying to figure out how to use it, please feel free to ask me questions and get in touch!  Please feel free to [open an issue](https://github.com/natgeo-wong/GOESatellites.jl/issues/new) if you have any questions, comments, suggestions, etc!
