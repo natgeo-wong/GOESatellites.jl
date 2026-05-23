@@ -1,6 +1,6 @@
-using GOES
+using GOESatellites
 using Test
 
-@testset "GOES.jl" begin
+@testset "GOESatellites.jl" begin
     # Write your tests here.
 end
