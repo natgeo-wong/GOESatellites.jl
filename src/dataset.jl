@@ -176,11 +176,11 @@ function checkvalid(
 )
 
     if !haskey(details, "$satellite")
-        error("$(modulelog()) - GOES-$satellite did not produce the dataset $product")
+        error("$(modulelog()) - GOES-$satellite did not produce the dataset $(details.ID)")
     end
 
     if !haskey(details["$satellite"]["sector"], "$sector")
-        error("$(modulelog()) - GOES-$satellite does not have the $sector Sector defined for the $product dataset")
+        error("$(modulelog()) - GOES-$satellite does not have the $sector Sector defined for the $(details.ID) dataset")
     end
 
 end
