@@ -1,0 +1,66 @@
+{
+  "ID": "ABI-L2-LSA",
+  "name": "Advanced Baseline Imager Level 2 - Land Surface Albedo",
+  "aws": true,
+  "description": "Retrieves the land surface shortwave broadband albedo, representing the fraction of incoming solar radiation reflected by the surface. The product accounts for atmospheric effects and anisotropic surface reflectance behaviour.",
+  "16": {
+    "sector": {
+      "C": {"start": "2021-08-19", "end": "2025-04-07"},
+      "F": {"start": "2021-08-19", "end": "2025-04-07"},
+      "M": {"start": "2021-08-19", "end": "2025-04-07"}
+    },
+    "variables": {
+      "LSA": {
+        "description": "ABI L2 Land Surface Shortwave Broadband Albedo",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "surface_albedo",
+        "units": "0-1"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "C": {"start": "2021-08-19", "end": "2023-01-10"},
+      "F": {"start": "2021-08-19", "end": "2023-01-10"},
+      "M": {"start": "2021-08-19", "end": "2023-01-10"}
+    },
+    "variables": {
+      "LSA": {
+        "description": "ABI L2 Land Surface Shortwave Broadband Albedo",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "surface_albedo",
+        "units": "0-1"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2022-05-12", "end": "2026-05-13"},
+      "F": {"start": "2022-05-12", "end": "2026-05-13"},
+      "M": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "LSA": {
+        "description": "ABI L2 Land Surface Shortwave Broadband Albedo",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "surface_albedo",
+        "units": "0-1"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "C": {"start": "2024-10-16", "end": "2026-05-13"},
+      "F": {"start": "2024-10-16", "end": "2026-05-13"},
+      "M": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "LSA": {
+        "description": "ABI L2 Land Surface Shortwave Broadband Albedo",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "surface_albedo",
+        "units": "0-1"
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "ID": "ABI-L2-SST",
+  "name": "Advanced Baseline Imager Level 2 - Sea Surface Temperature",
+  "aws": true,
+  "description": "Retrieves the radiative skin temperature of the ocean surface in Kelvin using ABI thermal infrared window channels corrected for atmospheric absorption. The product supports ocean heat content monitoring, hurricane intensity forecasting, and marine ecosystem studies.",
+  "16": {
+    "sector": {
+      "F": {"start": "2019-12-06", "end": "2025-04-07"}
+    },
+    "variables": {
+      "SST": {
+        "description": "ABI L2+ Sea Surface (Skin) Temperature",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "sea_surface_skin_temperature",
+        "units": "K"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "F": {"start": "2019-12-06", "end": "2023-01-10"}
+    },
+    "variables": {
+      "SST": {
+        "description": "ABI L2+ Sea Surface (Skin) Temperature",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "sea_surface_skin_temperature",
+        "units": "K"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "F": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "SST": {
+        "description": "ABI L2+ Sea Surface (Skin) Temperature",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "sea_surface_skin_temperature",
+        "units": "K"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "F": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "SST": {
+        "description": "ABI L2+ Sea Surface (Skin) Temperature",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "sea_surface_skin_temperature",
+        "units": "K"
+      }
+    }
+  }
+}

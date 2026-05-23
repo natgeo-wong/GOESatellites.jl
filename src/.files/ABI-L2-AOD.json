@@ -1,0 +1,80 @@
+{
+  "ID": "ABI-L2-AOD",
+  "name": "Advanced Baseline Imager Level 2 - Aerosol Optical Depth",
+  "aws": true,
+  "description": "Measures total columnar aerosol optical depth at 550 nm over land and ocean using ABI visible and near-infrared channels. Two Angstrom exponent fields characterise the wavelength dependence of aerosol extinction across the 0.47\u20130.86 \u03bcm and 0.86\u20131.61 \u03bcm band pairs.",
+  "16": {
+    "sector": {
+      "C": {"start": "2017-05-24", "end": "2025-04-07"},
+      "F": {"start": "2019-12-06", "end": "2025-04-07"}
+    },
+    "variables": {
+      "AOD": {
+        "description": "ABI L2+ Aerosol Optical Depth at 550 nm",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "atmosphere_extinction_optical_thickness_due_to_ambient_aerosol",
+        "units": "0-1"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "C": {"start": "2018-08-27", "end": "2023-01-10"},
+      "F": {"start": "2019-12-06", "end": "2023-01-10"}
+    },
+    "variables": {
+      "AOD": {
+        "description": "ABI L2+ Aerosol Optical Depth at 550 nm",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "atmosphere_extinction_optical_thickness_due_to_ambient_aerosol",
+        "units": "0-1"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2022-05-12", "end": "2026-05-13"},
+      "F": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "AE1": {
+        "description": "Angstrom Exponent corresponding to 0.47 / 0.86 micron wavelength pair",
+        "units": ""
+      },
+      "AE2": {
+        "description": "Angstrom Exponent corresponding to 0.86 / 1.61 micron wavelength pair",
+        "units": ""
+      },
+      "AOD": {
+        "description": "ABI L2+ Aerosol Optical Depth at 550 nm",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "atmosphere_extinction_optical_thickness_due_to_ambient_aerosol",
+        "units": "0-1"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "C": {"start": "2024-10-16", "end": "2026-05-13"},
+      "F": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "AE1": {
+        "description": "Angstrom Exponent corresponding to 0.47 / 0.86 micron wavelength pair over water",
+        "standard_name": "angstrom_exponent_of_ambient_aerosol_in_air",
+        "units": ""
+      },
+      "AE2": {
+        "description": "Angstrom Exponent corresponding to 0.86 / 1.61 micron wavelength pair over water",
+        "standard_name": "angstrom_exponent_of_ambient_aerosol_in_air",
+        "units": ""
+      },
+      "AOD": {
+        "description": "ABI L2+ Aerosol Optical Depth at 550 nm",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol",
+        "units": "0-1"
+      }
+    }
+  }
+}

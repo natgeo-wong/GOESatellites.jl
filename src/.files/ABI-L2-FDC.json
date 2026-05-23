@@ -1,0 +1,130 @@
+{
+  "ID": "ABI-L2-FDC",
+  "name": "Advanced Baseline Imager Level 2 - Fire Detection and Characterization",
+  "aws": true,
+  "description": "Detects and characterises active fire hot spots using the 3.9 \u03bcm and 11 \u03bcm ABI channels, providing per-pixel fire area, temperature, radiative power, and a multi-category fire mask. The fire mask distinguishes confirmed fires, probable fires, and cloud- or geometry-contaminated pixels.",
+  "16": {
+    "sector": {
+      "C": {"start": "2017-05-24", "end": "2025-04-07"},
+      "F": {"start": "2017-05-24", "end": "2025-04-07"},
+      "M": {"start": "2021-05-18", "end": "2025-04-07"}
+    },
+    "variables": {
+      "Area": {
+        "description": "ABI L2+ Fire-Hot Spot Characterization: Fire Area",
+        "standard_name": "fire_area",
+        "units": "km**2"
+      },
+      "Mask": {
+        "description": "ABI L2+ Fire - Hot Spot Characterization: Fire Mask",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "units": "0-1"
+      },
+      "Power": {
+        "description": "ABI L2+ Fire-Hot Spot Characterization: Fire Radiative Power",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "fire_radiative_power",
+        "units": "MW"
+      },
+      "Temp": {
+        "description": "ABI L2+ Fire-Hot Spot Characterization: Fire Temperature",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "fire_temperature",
+        "units": "K"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "C": {"start": "2018-08-27", "end": "2023-01-10"},
+      "F": {"start": "2018-08-27", "end": "2023-01-10"},
+      "M": {"start": "2021-05-18", "end": "2023-01-10"}
+    },
+    "variables": {
+      "Area": {
+        "description": "ABI L2+ Fire-Hot Spot Characterization: Fire Area",
+        "standard_name": "fire_area",
+        "units": "km**2"
+      },
+      "Mask": {
+        "description": "ABI L2+ Fire - Hot Spot Characterization: Fire Mask",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "units": "0-1"
+      },
+      "Power": {
+        "description": "ABI L2+ Fire-Hot Spot Characterization: Fire Radiative Power",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "fire_radiative_power",
+        "units": "MW"
+      },
+      "Temp": {
+        "description": "ABI L2+ Fire-Hot Spot Characterization: Fire Temperature",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "fire_temperature",
+        "units": "K"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2022-05-12", "end": "2026-05-13"},
+      "F": {"start": "2022-05-12", "end": "2026-05-13"},
+      "M": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "Area": {
+        "description": "ABI L2+ Fire-Hot Spot Characterization: Fire Area",
+        "standard_name": "fire_area",
+        "units": "m**2"
+      },
+      "Mask": {
+        "description": "ABI L2+ Fire - Hot Spot Characterization: Fire Mask",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "units": "0-1"
+      },
+      "Power": {
+        "description": "ABI L2+ Fire-Hot Spot Characterization: Fire Radiative Power",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "fire_radiative_power",
+        "units": "MW"
+      },
+      "Temp": {
+        "description": "ABI L2+ Fire-Hot Spot Characterization: Fire Temperature",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "fire_temperature",
+        "units": "K"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "C": {"start": "2024-10-18", "end": "2026-05-13"},
+      "F": {"start": "2024-10-18", "end": "2026-05-13"},
+      "M": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "Area": {
+        "description": "ABI L2+ Fire-Hot Spot Characterization: Fire Area",
+        "standard_name": "fire_area",
+        "units": "m**2"
+      },
+      "Mask": {
+        "description": "ABI L2+ Fire - Hot Spot Characterization: Fire Mask",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "units": "0-1"
+      },
+      "Power": {
+        "description": "ABI L2+ Fire-Hot Spot Characterization: Fire Radiative Power",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "fire_radiative_power",
+        "units": "MW"
+      },
+      "Temp": {
+        "description": "ABI L2+ Fire-Hot Spot Characterization: Fire Temperature",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "fire_temperature",
+        "units": "K"
+      }
+    }
+  }
+}

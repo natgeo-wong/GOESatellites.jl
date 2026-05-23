@@ -1,0 +1,162 @@
+{
+  "ID": "ABI-L2-BRF",
+  "name": "Advanced Baseline Imager Level 2 - Land Surface Bidirectional Reflectance Factor",
+  "aws": true,
+  "description": "Estimates land surface bidirectional reflectance factors at ABI bands 1, 2, 3, 5, and 6, correcting for atmospheric effects and viewing geometry. The product supports vegetation monitoring, surface energy balance studies, and land cover classification.",
+  "16": {
+    "sector": {
+      "C": {"start": "2021-08-19", "end": "2025-04-07"},
+      "F": {"start": "2021-08-19", "end": "2025-04-07"},
+      "M": {"start": "2021-08-19", "end": "2025-04-07"}
+    },
+    "variables": {
+      "BRF1": {
+        "description": "ABI L2 Land Surface Bidirectional Reflectance Factor at ABI Band 1",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "bidirectional_reflectance_factor_band_1",
+        "units": "0-1"
+      },
+      "BRF2": {
+        "description": "ABI L2 Land Surface Bidirectional Reflectance Factor at ABI Band 2",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "bidirectional_reflectance_factor_band_2",
+        "units": "0-1"
+      },
+      "BRF3": {
+        "description": "ABI L2 Land Surface Bidirectional Reflectance Factor at ABI Band 3",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "bidirectional_reflectance_factor_band_3",
+        "units": "0-1"
+      },
+      "BRF5": {
+        "description": "ABI L2 Land Surface Bidirectional Reflectance Factor at ABI Band 5",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "bidirectional_reflectance_factor_band_5",
+        "units": "0-1"
+      },
+      "BRF6": {
+        "description": "ABI L2 Land Surface Bidirectional Reflectance Factor at ABI Band 6",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "bidirectional_reflectance_factor_band_6",
+        "units": "0-1"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "C": {"start": "2021-08-19", "end": "2023-01-10"},
+      "F": {"start": "2021-08-19", "end": "2023-01-10"},
+      "M": {"start": "2021-08-19", "end": "2023-01-10"}
+    },
+    "variables": {
+      "BRF1": {
+        "description": "ABI L2 Land Surface Bidirectional Reflectance Factor at ABI Band 1",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "bidirectional_reflectance_factor_band_1",
+        "units": "0-1"
+      },
+      "BRF2": {
+        "description": "ABI L2 Land Surface Bidirectional Reflectance Factor at ABI Band 2",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "bidirectional_reflectance_factor_band_2",
+        "units": "0-1"
+      },
+      "BRF3": {
+        "description": "ABI L2 Land Surface Bidirectional Reflectance Factor at ABI Band 3",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "bidirectional_reflectance_factor_band_3",
+        "units": "0-1"
+      },
+      "BRF5": {
+        "description": "ABI L2 Land Surface Bidirectional Reflectance Factor at ABI Band 5",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "bidirectional_reflectance_factor_band_5",
+        "units": "0-1"
+      },
+      "BRF6": {
+        "description": "ABI L2 Land Surface Bidirectional Reflectance Factor at ABI Band 6",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "bidirectional_reflectance_factor_band_6",
+        "units": "0-1"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2022-05-12", "end": "2026-05-13"},
+      "F": {"start": "2022-05-12", "end": "2026-05-13"},
+      "M": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "BRF1": {
+        "description": "ABI L2 Land Surface Bidirectional Reflectance Factor at ABI Band 1",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "bidirectional_reflectance_factor_band_1",
+        "units": "0-1"
+      },
+      "BRF2": {
+        "description": "ABI L2 Land Surface Bidirectional Reflectance Factor at ABI Band 2",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "bidirectional_reflectance_factor_band_2",
+        "units": "0-1"
+      },
+      "BRF3": {
+        "description": "ABI L2 Land Surface Bidirectional Reflectance Factor at ABI Band 3",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "bidirectional_reflectance_factor_band_3",
+        "units": "0-1"
+      },
+      "BRF5": {
+        "description": "ABI L2 Land Surface Bidirectional Reflectance Factor at ABI Band 5",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "bidirectional_reflectance_factor_band_5",
+        "units": "0-1"
+      },
+      "BRF6": {
+        "description": "ABI L2 Land Surface Bidirectional Reflectance Factor at ABI Band 6",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "bidirectional_reflectance_factor_band_6",
+        "units": "0-1"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "C": {"start": "2024-10-16", "end": "2026-05-13"},
+      "F": {"start": "2024-10-16", "end": "2026-05-13"},
+      "M": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "BRF1": {
+        "description": "ABI L2 Land Surface Bidirectional Reflectance Factor at ABI Band 1",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "bidirectional_reflectance_factor_band_1",
+        "units": "0-1"
+      },
+      "BRF2": {
+        "description": "ABI L2 Land Surface Bidirectional Reflectance Factor at ABI Band 2",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "bidirectional_reflectance_factor_band_2",
+        "units": "0-1"
+      },
+      "BRF3": {
+        "description": "ABI L2 Land Surface Bidirectional Reflectance Factor at ABI Band 3",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "bidirectional_reflectance_factor_band_3",
+        "units": "0-1"
+      },
+      "BRF5": {
+        "description": "ABI L2 Land Surface Bidirectional Reflectance Factor at ABI Band 5",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "bidirectional_reflectance_factor_band_5",
+        "units": "0-1"
+      },
+      "BRF6": {
+        "description": "ABI L2 Land Surface Bidirectional Reflectance Factor at ABI Band 6",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "bidirectional_reflectance_factor_band_6",
+        "units": "0-1"
+      }
+    }
+  }
+}

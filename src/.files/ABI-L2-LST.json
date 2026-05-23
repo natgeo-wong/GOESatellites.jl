@@ -1,0 +1,74 @@
+{
+  "ID": "ABI-L2-LST",
+  "name": "Advanced Baseline Imager Level 2 - Land Surface Temperature",
+  "aws": true,
+  "description": "Retrieves the radiative skin temperature of the land surface in Kelvin using ABI thermal infrared window channels and an atmospheric correction scheme. A product quality indicator field is included to identify pixels affected by cloud, high view angle, or other degraded conditions.",
+  "16": {
+    "sector": {
+      "C": {"start": "2017-05-24", "end": "2025-04-07"},
+      "F": {"start": "2017-05-24", "end": "2025-04-07"},
+      "M": {"start": "2019-12-06", "end": "2025-04-07"}
+    },
+    "variables": {
+      "LST": {
+        "description": "ABI L2+ Land Surface (Skin) Temperature",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "surface_temperature",
+        "units": "K"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "C": {"start": "2018-08-27", "end": "2023-01-10"},
+      "F": {"start": "2018-08-27", "end": "2023-01-10"},
+      "M": {"start": "2019-12-06", "end": "2023-01-10"}
+    },
+    "variables": {
+      "LST": {
+        "description": "ABI L2+ Land Surface (Skin) Temperature",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "surface_temperature",
+        "units": "K"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2022-05-12", "end": "2026-05-13"},
+      "F": {"start": "2022-05-12", "end": "2026-05-13"},
+      "M": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "LST": {
+        "description": "ABI L2+ Land Surface (Skin) Temperature",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "surface_temperature",
+        "units": "K"
+      },
+      "PQI": {
+        "description": "Product quality indicators",
+        "units": ""
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "C": {"start": "2024-10-16", "end": "2026-05-13"},
+      "F": {"start": "2024-10-16", "end": "2026-05-13"},
+      "M": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "LST": {
+        "description": "ABI L2+ Land Surface (Skin) Temperature",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "surface_temperature",
+        "units": "K"
+      },
+      "PQI": {
+        "description": "Product quality indicators",
+        "units": ""
+      }
+    }
+  }
+}

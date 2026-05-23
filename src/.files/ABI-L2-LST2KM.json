@@ -1,0 +1,74 @@
+{
+  "ID": "ABI-L2-LST2KM",
+  "name": "Advanced Baseline Imager Level 2 - Land Surface Temperature (2 km)",
+  "aws": true,
+  "description": "Provides land surface skin temperature in Kelvin at a uniform 2 km spatial resolution using the same retrieval approach as ABI-L2-LST. The fixed 2 km grid simplifies temporal compositing and multi-satellite merging.",
+  "16": {
+    "sector": {
+      "F": {"start": "2021-10-14", "end": "2025-04-07"}
+    },
+    "variables": {
+      "LST": {
+        "description": "ABI L2+ Land Surface (Skin) Temperature",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "surface_temperature",
+        "units": "K"
+      },
+      "PQI": {
+        "description": "Product quality indicators",
+        "units": ""
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "F": {"start": "2021-10-14", "end": "2023-01-10"}
+    },
+    "variables": {
+      "LST": {
+        "description": "ABI L2+ Land Surface (Skin) Temperature",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "surface_temperature",
+        "units": "K"
+      },
+      "PQI": {
+        "description": "Product quality indicators",
+        "units": ""
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "F": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "LST": {
+        "description": "ABI L2+ Land Surface (Skin) Temperature",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "surface_temperature",
+        "units": "K"
+      },
+      "PQI": {
+        "description": "Product quality indicators",
+        "units": ""
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "F": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "LST": {
+        "description": "ABI L2+ Land Surface (Skin) Temperature",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "surface_temperature",
+        "units": "K"
+      },
+      "PQI": {
+        "description": "Product quality indicators",
+        "units": ""
+      }
+    }
+  }
+}

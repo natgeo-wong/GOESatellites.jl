@@ -1,0 +1,64 @@
+{
+  "ID": "ABI-L2-DSR",
+  "name": "Advanced Baseline Imager Level 2 - Downward Shortwave Radiation",
+  "aws": true,
+  "description": "Estimates the downward shortwave radiative flux at the Earth\u2019s surface in W m\u207b\u00b2 by combining ABI broadband irradiance with atmospheric correction for cloud and aerosol effects. The product uses a latitude\u2013longitude grid rather than the standard ABI fixed grid.",
+  "16": {
+    "sector": {
+      "C": {"start": "2019-12-06", "end": "2024-04-17"},
+      "F": {"start": "2019-12-06", "end": "2025-04-07"},
+      "M": {"start": "2019-12-28", "end": "2024-04-17"}
+    },
+    "variables": {
+      "DSR": {
+        "description": "ABI L2+ Downward Shortwave Radiation: Surface",
+        "resolution": "lon: 0.5 degree lat: 0.5 degree",
+        "standard_name": "surface_downwelling_shortwave_flux_in_air",
+        "units": "W m**-2"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "C": {"start": "2019-12-06", "end": "2023-01-10"},
+      "F": {"start": "2019-12-06", "end": "2023-01-10"},
+      "M": {"start": "2019-12-06", "end": "2023-01-10"}
+    },
+    "variables": {
+      "DSR": {
+        "description": "ABI L2+ Downward Shortwave Radiation: Surface",
+        "resolution": "lon: 0.5 degree lat: 0.5 degree",
+        "standard_name": "surface_downwelling_shortwave_flux_in_air",
+        "units": "W m**-2"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2022-05-12", "end": "2024-04-17"},
+      "F": {"start": "2022-05-12", "end": "2026-05-13"},
+      "M": {"start": "2022-05-12", "end": "2024-04-17"}
+    },
+    "variables": {
+      "DSR": {
+        "description": "ABI L2+ Downward Shortwave Radiation: Surface",
+        "resolution": "lon: 0.5 degree lat: 0.5 degree",
+        "standard_name": "surface_downwelling_shortwave_flux_in_air",
+        "units": "W m**-2"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "F": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "DSR": {
+        "description": "ABI L2+ Downward Shortwave Radiation: Surface",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "surface_downwelling_shortwave_flux_in_air",
+        "units": "W m**-2"
+      }
+    }
+  }
+}

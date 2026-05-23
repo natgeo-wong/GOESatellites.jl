@@ -1,0 +1,66 @@
+{
+  "ID": "ABI-L2-CMIP",
+  "name": "Advanced Baseline Imager Level 2 - Cloud and Moisture Imagery",
+  "aws": true,
+  "description": "Delivers calibrated, single-channel cloud and moisture imagery as a reflectance factor or brightness temperature depending on the ABI channel selected. The product serves as the fundamental imagery layer for convective analysis and nowcasting.",
+  "16": {
+    "sector": {
+      "C": {"start": "2017-02-28", "end": "2025-04-07"},
+      "F": {"start": "2017-02-28", "end": "2025-04-07"},
+      "M": {"start": "2017-02-28", "end": "2025-04-07"}
+    },
+    "variables": {
+      "CMI": {
+        "description": "ABI L2+ Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000028 rad x: 0.000028 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "C": {"start": "2018-08-28", "end": "2023-01-10"},
+      "F": {"start": "2018-08-28", "end": "2023-01-10"},
+      "M": {"start": "2018-08-28", "end": "2023-01-10"}
+    },
+    "variables": {
+      "CMI": {
+        "description": "ABI L2+ Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000028 rad x: 0.000028 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2022-05-12", "end": "2026-05-13"},
+      "F": {"start": "2022-05-12", "end": "2026-05-13"},
+      "M": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "CMI": {
+        "description": "ABI L2+ Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000028 rad x: 0.000028 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "C": {"start": "2024-10-11", "end": "2026-05-13"},
+      "F": {"start": "2024-10-11", "end": "2026-05-13"},
+      "M": {"start": "2024-10-19", "end": "2026-05-13"}
+    },
+    "variables": {
+      "CMI": {
+        "description": "ABI L2+ Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000028 rad x: 0.000028 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      }
+    }
+  }
+}

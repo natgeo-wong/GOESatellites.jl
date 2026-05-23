@@ -1,0 +1,51 @@
+{
+  "ID": "ABI-L2-ACHP2KM",
+  "name": "Advanced Baseline Imager Level 2 - Cloud Top Pressure (2 km)",
+  "aws": true,
+  "description": "Retrieves cloud top pressure in hPa at a uniform 2 km spatial resolution using CO\u2082 slicing and infrared techniques. The fixed 2 km grid facilitates consistent comparisons across sectors and satellites.",
+  "16": {
+    "sector": {
+      "C": {"start": "2023-03-24", "end": "2025-04-07"},
+      "F": {"start": "2023-03-24", "end": "2025-04-07"},
+      "M": {"start": "2023-03-24", "end": "2025-04-07"}
+    },
+    "variables": {
+      "PRES": {
+        "description": "ABI L2+ Cloud Top Pressure",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "air_pressure_at_cloud_top",
+        "units": "hPa"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2023-03-28", "end": "2026-05-13"},
+      "F": {"start": "2023-03-28", "end": "2026-05-13"},
+      "M": {"start": "2023-03-28", "end": "2026-05-13"}
+    },
+    "variables": {
+      "PRES": {
+        "description": "ABI L2+ Cloud Top Pressure",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "air_pressure_at_cloud_top",
+        "units": "hPa"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "C": {"start": "2024-10-16", "end": "2026-05-13"},
+      "F": {"start": "2024-10-16", "end": "2026-05-13"},
+      "M": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "PRES": {
+        "description": "ABI L2+ Cloud Top Pressure",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "air_pressure_at_cloud_top",
+        "units": "hPa"
+      }
+    }
+  }
+}

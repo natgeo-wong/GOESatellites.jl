@@ -21,7 +21,7 @@ Keyword Arguments
 - `overwrite` : If `true`, overwrite any existing files
 """
 function download(
-	gds   :: GOESDataset;
+	gds   :: GOESAmazon;
 	start :: Date = gds.start,
 	stop  :: Date = gds.stop,
 	overwrite :: Bool = false
@@ -39,7 +39,7 @@ function download(
 		
 		for hr = 0 : 23
 
-			prefix = "$(gds.product)/$yr/$(@sprintf("%03d",doy))/$(@sprintf("%02d",hr))/"
+			prefix = "$(gds.product)$(gds.sectorID)/$yr/$(@sprintf("%03d",doy))/$(@sprintf("%02d",hr))/"
 
 			keys = s3_list_objects(aws,gds.bucket,prefix)
 			for (ii, obj) in enumerate(keys)
@@ -48,7 +48,7 @@ function download(
 				if overwrite || !isfile(fnc)
 					s3_get_file(aws,gds.bucket,obj["Key"],fnc)
 				else
-					@info "$(modulelog()) - GOES-$(gds.satellite) $(gds.product) data for $(dt)T$(hr)-step$(ii) exists in $(fnc), and we are not overwriting, skipping to next timestep ..."
+					@info "$(modulelog()) - GOES-$(gds.satellite) $(gds.product) data in $(gds.sector) for $(dt)T$(hr)-step$(ii) exists in $(fnc), and we are not overwriting, skipping to next timestep ..."
 				end
 			end
 		
@@ -84,7 +84,7 @@ Keyword Arguments
 - `NT` : The data type for `gvar`
 """
 function download(
-	gds   :: GOESDataset,
+	gds   :: GOESAmazon,
 	geo   :: GeoRegion,
 	gvar  :: String;
 	start :: Date = gds.start,
@@ -116,7 +116,7 @@ function download(
 			dy = dayofyear(dt)
 			for hr = 0 : 23
 
-				prefix = "$(gds.product)/$yr/$(@sprintf("%03d",dy))/$(@sprintf("%02d",hr))/"
+				prefix = "$(gds.product)$(gds.sectorID)/$yr/$(@sprintf("%03d",dy))/$(@sprintf("%02d",hr))/"
 				keys = s3_list_objects(aws,gds.bucket,prefix)
 				for obj in keys
 					jj += 1

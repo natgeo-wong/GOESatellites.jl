@@ -1,0 +1,61 @@
+{
+  "ID": "ABI-L2-RSR",
+  "name": "Advanced Baseline Imager Level 2 - Reflected Shortwave Radiation",
+  "aws": true,
+  "description": "Measures the shortwave radiative flux reflected back to space at the top of the atmosphere in W m\u207b\u00b2 using broadband ABI observations. The product is used in radiation budget studies and to evaluate the cloud radiative effect.",
+  "16": {
+    "sector": {
+      "C": {"start": "2019-12-06", "end": "2024-04-17"},
+      "F": {"start": "2019-12-06", "end": "2025-04-07"}
+    },
+    "variables": {
+      "RSR": {
+        "description": "ABI L2+ Reflected Shortwave Radiation: TOA",
+        "resolution": "lon: 0.25 degree lat: 0.25 degree",
+        "standard_name": "toa_outgoing_shortwave_flux",
+        "units": "W m**-2"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "C": {"start": "2019-12-06", "end": "2023-01-10"},
+      "F": {"start": "2019-12-06", "end": "2023-01-10"}
+    },
+    "variables": {
+      "RSR": {
+        "description": "ABI L2+ Reflected Shortwave Radiation: TOA",
+        "resolution": "lon: 0.25 degree lat: 0.25 degree",
+        "standard_name": "toa_outgoing_shortwave_flux",
+        "units": "W m**-2"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2022-05-12", "end": "2024-04-17"},
+      "F": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "RSR": {
+        "description": "ABI L2+ Reflected Shortwave Radiation: TOA",
+        "resolution": "lon: 0.25 degree lat: 0.25 degree",
+        "standard_name": "toa_outgoing_shortwave_flux",
+        "units": "W m**-2"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "F": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "RSR": {
+        "description": "ABI L2+ Reflected Shortwave Radiation: TOA",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_outgoing_shortwave_flux",
+        "units": "W m**-2"
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "ID": "ABI-L2-ADP",
+  "name": "Advanced Baseline Imager Level 2 - Aerosol Detection Product",
+  "aws": true,
+  "description": "Detects and flags the presence of aerosols, dust, smoke, and other scene types using a multi-channel spectral approach across ABI visible, near-infrared, and infrared bands. Auxiliary flags identify cloud, snow/ice, and product quality at each pixel.",
+  "16": {
+    "sector": {
+      "C": {"start": "2019-12-04", "end": "2025-04-07"},
+      "F": {"start": "2019-12-04", "end": "2025-04-07"},
+      "M": {"start": "2019-12-04", "end": "2025-04-07"}
+    },
+    "variables": {
+      "Aerosol": {
+        "description": "ABI L2+ Aerosol Detection: Aerosol",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "aerosol_binary_mask",
+        "units": "0-1"
+      },
+      "Dust": {
+        "description": "ABI L2+ Aerosol Detection: Dust",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "dust_binary_mask",
+        "units": "0-1"
+      },
+      "Smoke": {
+        "description": "ABI L2+ Aerosol Detection: Smoke",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "smoke_binary_mask",
+        "units": "0-1"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "C": {"start": "2019-12-04", "end": "2023-01-10"},
+      "F": {"start": "2019-12-04", "end": "2023-01-10"},
+      "M": {"start": "2019-12-04", "end": "2023-01-10"}
+    },
+    "variables": {
+      "Aerosol": {
+        "description": "ABI L2+ Aerosol Detection: Aerosol",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "aerosol_binary_mask",
+        "units": "0-1"
+      },
+      "Dust": {
+        "description": "ABI L2+ Aerosol Detection: Dust",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "dust_binary_mask",
+        "units": "0-1"
+      },
+      "Smoke": {
+        "description": "ABI L2+ Aerosol Detection: Smoke",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "smoke_binary_mask",
+        "units": "0-1"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2022-05-12", "end": "2026-05-13"},
+      "F": {"start": "2022-05-12", "end": "2026-05-13"},
+      "M": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "Aerosol": {
+        "description": "ABI L2+ Aerosol Detection: Aerosol",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "aerosol_binary_mask",
+        "units": "0-1"
+      },
+      "Dust": {
+        "description": "ABI L2+ Aerosol Detection: Dust",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "dust_binary_mask",
+        "units": "0-1"
+      },
+      "Smoke": {
+        "description": "ABI L2+ Aerosol Detection: Smoke",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "smoke_binary_mask",
+        "units": "0-1"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "C": {"start": "2024-10-16", "end": "2026-05-13"},
+      "F": {"start": "2024-10-16", "end": "2026-05-13"},
+      "M": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "Cloud": {
+        "description": "ABI L2+ Aerosol Detection: Cloud Flag",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "cloud_binary_mask",
+        "units": "0-1"
+      },
+      "Dust": {
+        "description": "ABI L2+ Aerosol Detection: Dust Flag",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "dust_binary_mask",
+        "units": "0-1"
+      },
+      "PQI1": {
+        "description": "ABI L2+ Aerosol Detection: Product Quality Information Flag 1",
+        "standard_name": "product_quality_information_flag_1",
+        "units": "0-1"
+      },
+      "PQI2": {
+        "description": "ABI L2+ Aerosol Detection: Product Quality Information Flag 2",
+        "standard_name": "product_quality_information_flag_2",
+        "units": "0-1"
+      },
+      "Smoke": {
+        "description": "ABI L2+ Aerosol Detection: Smoke Flag",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "smoke_binary_mask",
+        "units": "0-1"
+      },
+      "SnowIce": {
+        "description": "ABI L2+ Aerosol Detection: Snow Ice Flag",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "snowice_binary_mask",
+        "units": "0-1"
+      }
+    }
+  }
+}

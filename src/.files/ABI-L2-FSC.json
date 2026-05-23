@@ -1,0 +1,51 @@
+{
+  "ID": "ABI-L2-FSC",
+  "name": "Advanced Baseline Imager Level 2 - Fractional Snow Cover",
+  "aws": true,
+  "description": "Estimates the fraction of each ABI pixel covered by snow using visible and shortwave infrared channels sensitive to snow reflectance. The product supports hydrological monitoring, surface energy balance modelling, and climate studies.",
+  "16": {
+    "sector": {
+      "C": {"start": "2022-12-13", "end": "2025-04-07"},
+      "F": {"start": "2022-12-13", "end": "2025-04-07"},
+      "M": {"start": "2022-12-13", "end": "2025-04-07"}
+    },
+    "variables": {
+      "FSC": {
+        "description": "ABI L2+ Snow Cover, which contains fraction of pixel covered by snow",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "surface_snow_area_fraction",
+        "units": "%"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2022-12-13", "end": "2026-05-13"},
+      "F": {"start": "2022-12-13", "end": "2026-05-13"},
+      "M": {"start": "2022-12-13", "end": "2026-05-13"}
+    },
+    "variables": {
+      "FSC": {
+        "description": "ABI L2+ Snow Cover, which contains fraction of pixel covered by snow",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "surface_snow_area_fraction",
+        "units": "%"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "C": {"start": "2024-10-16", "end": "2026-05-13"},
+      "F": {"start": "2024-10-16", "end": "2026-05-13"},
+      "M": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "FSC": {
+        "description": "ABI L2+ Snow Cover, which contains fraction of pixel covered by snow",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "surface_snow_area_fraction",
+        "units": "%"
+      }
+    }
+  }
+}

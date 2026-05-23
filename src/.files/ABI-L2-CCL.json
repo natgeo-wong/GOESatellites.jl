@@ -1,0 +1,111 @@
+{
+  "ID": "ABI-L2-CCL",
+  "name": "Advanced Baseline Imager Level 2 - Cloud Classification and Layers",
+  "aws": true,
+  "description": "Provides total cloud fraction and a cloud layer flag that classifies cloud cover into low, middle, and high altitude bins. For GOES-19, five altitude-resolved cloud fraction fields between the surface and the top of the atmosphere are also included.",
+  "16": {
+    "sector": {
+      "C": {"start": "2023-05-18", "end": "2025-04-07"},
+      "F": {"start": "2023-05-18", "end": "2025-04-07"},
+      "M": {"start": "2023-05-18", "end": "2025-04-07"}
+    },
+    "variables": {
+      "CFP": {
+        "description": "ABI L2+ Cloud Fractions Packed",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "Cloud Fractions Packed",
+        "units": "0-1"
+      },
+      "CL": {
+        "description": "ABI L2+ Cloud Layer Flag",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "Cloud Layer Flag",
+        "units": "0-1"
+      },
+      "TCF": {
+        "description": "ABI L2+ Total Cloud Fraction",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "Total Cloud Fraction",
+        "units": "0-1"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2023-05-18", "end": "2026-05-13"},
+      "F": {"start": "2023-05-18", "end": "2026-05-13"},
+      "M": {"start": "2023-05-18", "end": "2026-05-13"}
+    },
+    "variables": {
+      "CFP": {
+        "description": "ABI L2+ Cloud Fractions Packed",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "Cloud Fractions Packed",
+        "units": "0-1"
+      },
+      "CL": {
+        "description": "ABI L2+ Cloud Layer Flag",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "Cloud Layer Flag",
+        "units": "0-1"
+      },
+      "TCF": {
+        "description": "ABI L2+ Total Cloud Fraction",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "Total Cloud Fraction",
+        "units": "0-1"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "C": {"start": "2024-10-16", "end": "2026-05-13"},
+      "F": {"start": "2024-10-16", "end": "2026-05-13"},
+      "M": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "CF1": {
+        "description": "cloud fraction between the surface and 5000ft above sea level",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "cloud_area_fraction_in_atmosphere_layer",
+        "units": "0-1"
+      },
+      "CF2": {
+        "description": "cloud fraction between 5000ft and 10000ft above sea level",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "cloud_area_fraction_in_atmosphere_layer",
+        "units": "0-1"
+      },
+      "CF3": {
+        "description": "cloud fraction between 10000ft and 18000ft above sea level",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "cloud_area_fraction_in_atmosphere_layer",
+        "units": "0-1"
+      },
+      "CF4": {
+        "description": "cloud fraction between 18000ft and 24000ft above sea level",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "cloud_area_fraction_in_atmosphere_layer",
+        "units": "0-1"
+      },
+      "CF5": {
+        "description": "cloud fraction between 24000ft above sea level and top of atmosphere",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "cloud_area_fraction_in_atmosphere_layer",
+        "units": "0-1"
+      },
+      "CL": {
+        "description": "ABI L2+ Cloud Layer Flag",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "Cloud Layer Flag",
+        "units": "0-1"
+      },
+      "TCF": {
+        "description": "ABI L2+ Total Cloud Fraction",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "cloud_area_fraction",
+        "units": "0-1"
+      }
+    }
+  }
+}

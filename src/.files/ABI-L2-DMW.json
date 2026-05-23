@@ -1,0 +1,122 @@
+{
+  "ID": "ABI-L2-DMW",
+  "name": "Advanced Baseline Imager Level 2 - Derived Motion Winds",
+  "aws": true,
+  "description": "Derives atmospheric motion vectors by tracking cloud and moisture features between successive ABI images, providing wind speed, direction, and pressure level for each tracked target. Vectors are reported as irregularly spaced point observations rather than on a regular grid.",
+  "16": {
+    "sector": {
+      "C": {"start": "2019-12-03", "end": "2025-04-07"},
+      "F": {"start": "2019-12-03", "end": "2025-04-07"},
+      "M": {"start": "2019-12-03", "end": "2025-04-07"}
+    },
+    "variables": {
+      "pressure": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's air pressure",
+        "standard_name": "air_pressure",
+        "units": "hPa"
+      },
+      "temperature": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's air temperature",
+        "standard_name": "air_temperature",
+        "units": "K"
+      },
+      "wind_direction": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's wind from direction measured positive clockwise from due north",
+        "standard_name": "wind_from_direction",
+        "units": "degree"
+      },
+      "wind_speed": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's wind speed",
+        "standard_name": "wind_speed",
+        "units": "m s**-1"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "C": {"start": "2019-12-03", "end": "2023-01-10"},
+      "F": {"start": "2019-12-03", "end": "2023-01-10"},
+      "M": {"start": "2019-12-03", "end": "2023-01-10"}
+    },
+    "variables": {
+      "pressure": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's air pressure",
+        "standard_name": "air_pressure",
+        "units": "hPa"
+      },
+      "temperature": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's air temperature",
+        "standard_name": "air_temperature",
+        "units": "K"
+      },
+      "wind_direction": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's wind from direction measured positive clockwise from due north",
+        "standard_name": "wind_from_direction",
+        "units": "degree"
+      },
+      "wind_speed": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's wind speed",
+        "standard_name": "wind_speed",
+        "units": "m s**-1"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2022-05-12", "end": "2026-05-13"},
+      "F": {"start": "2022-05-12", "end": "2026-05-13"},
+      "M": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "pressure": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's air pressure",
+        "standard_name": "air_pressure",
+        "units": "hPa"
+      },
+      "temperature": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's air temperature",
+        "standard_name": "air_temperature",
+        "units": "K"
+      },
+      "wind_direction": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's wind from direction measured positive clockwise from due north",
+        "standard_name": "wind_from_direction",
+        "units": "degree"
+      },
+      "wind_speed": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's wind speed",
+        "standard_name": "wind_speed",
+        "units": "m s**-1"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "C": {"start": "2024-10-16", "end": "2026-05-13"},
+      "F": {"start": "2024-10-16", "end": "2026-05-13"},
+      "M": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "pressure": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's air pressure",
+        "standard_name": "air_pressure",
+        "units": "hPa"
+      },
+      "temperature": {
+        "description": "ABI L2+ Derived Motion Winds: median brightness temperature of the cloud tracer",
+        "standard_name": "air_temperature",
+        "units": "K"
+      },
+      "wind_direction": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's wind from direction measured positive clockwise from due north",
+        "standard_name": "wind_from_direction",
+        "units": "degree"
+      },
+      "wind_speed": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's wind speed",
+        "standard_name": "wind_speed",
+        "units": "m s**-1"
+      }
+    }
+  }
+}

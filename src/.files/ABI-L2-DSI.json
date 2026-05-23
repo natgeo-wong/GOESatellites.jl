@@ -1,0 +1,162 @@
+{
+  "ID": "ABI-L2-DSI",
+  "name": "Advanced Baseline Imager Level 2 - Derived Stability Indices",
+  "aws": true,
+  "description": "Computes five thermodynamic stability indices\u2014CAPE, K-Index, Lifted Index, Showalter Index, and Total Totals\u2014from retrieved temperature and moisture profiles. These indices are widely used to assess convective potential and severe weather risk.",
+  "16": {
+    "sector": {
+      "C": {"start": "2019-12-06", "end": "2025-04-07"},
+      "F": {"start": "2019-12-06", "end": "2025-04-07"},
+      "M": {"start": "2019-12-06", "end": "2025-04-07"}
+    },
+    "variables": {
+      "CAPE": {
+        "description": "ABI L2+ Derived Stability Indices: CAPE",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "atmosphere_convective_available_potential_energy_wrt_surface",
+        "units": "J kg**-1"
+      },
+      "KI": {
+        "description": "ABI L2+ Derived Stability Indices: K-Index",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "atmosphere_stability_k_index",
+        "units": "K"
+      },
+      "LI": {
+        "description": "ABI L2+ Derived Stability Indices: Lifted Index",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "temperature_difference_between_ambient_air_and_air_lifted_adiabatically_from_the_surface",
+        "units": "K"
+      },
+      "SI": {
+        "description": "ABI L2+ Derived Stability Indices: Showalter Index",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "atmosphere_stability_showalter_index",
+        "units": "K"
+      },
+      "TT": {
+        "description": "ABI L2+ Derived Stability Indices: Total Totals Index",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "atmosphere_stability_total_totals_index",
+        "units": "K"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "C": {"start": "2019-12-06", "end": "2023-01-10"},
+      "F": {"start": "2019-12-06", "end": "2023-01-10"},
+      "M": {"start": "2019-12-06", "end": "2023-01-10"}
+    },
+    "variables": {
+      "CAPE": {
+        "description": "ABI L2+ Derived Stability Indices: CAPE",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "atmosphere_convective_available_potential_energy_wrt_surface",
+        "units": "J kg**-1"
+      },
+      "KI": {
+        "description": "ABI L2+ Derived Stability Indices: K-Index",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "atmosphere_stability_k_index",
+        "units": "K"
+      },
+      "LI": {
+        "description": "ABI L2+ Derived Stability Indices: Lifted Index",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "temperature_difference_between_ambient_air_and_air_lifted_adiabatically_from_the_surface",
+        "units": "K"
+      },
+      "SI": {
+        "description": "ABI L2+ Derived Stability Indices: Showalter Index",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "atmosphere_stability_showalter_index",
+        "units": "K"
+      },
+      "TT": {
+        "description": "ABI L2+ Derived Stability Indices: Total Totals Index",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "atmosphere_stability_total_totals_index",
+        "units": "K"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2022-05-12", "end": "2026-05-13"},
+      "F": {"start": "2022-05-12", "end": "2026-05-13"},
+      "M": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "CAPE": {
+        "description": "ABI L2+ Derived Stability Indices: CAPE",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "atmosphere_convective_available_potential_energy_wrt_surface",
+        "units": "J kg**-1"
+      },
+      "KI": {
+        "description": "ABI L2+ Derived Stability Indices: K-Index",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "atmosphere_stability_k_index",
+        "units": "K"
+      },
+      "LI": {
+        "description": "ABI L2+ Derived Stability Indices: Lifted Index",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "temperature_difference_between_ambient_air_and_air_lifted_adiabatically_from_the_surface",
+        "units": "K"
+      },
+      "SI": {
+        "description": "ABI L2+ Derived Stability Indices: Showalter Index",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "atmosphere_stability_showalter_index",
+        "units": "K"
+      },
+      "TT": {
+        "description": "ABI L2+ Derived Stability Indices: Total Totals Index",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "atmosphere_stability_total_totals_index",
+        "units": "K"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "C": {"start": "2024-10-16", "end": "2026-05-13"},
+      "F": {"start": "2024-10-16", "end": "2026-05-13"},
+      "M": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "CAPE": {
+        "description": "ABI L2+ Derived Stability Indices: CAPE",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "atmosphere_convective_available_potential_energy_wrt_surface",
+        "units": "J kg**-1"
+      },
+      "KI": {
+        "description": "ABI L2+ Derived Stability Indices: K-Index",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "atmosphere_stability_k_index",
+        "units": "K"
+      },
+      "LI": {
+        "description": "ABI L2+ Derived Stability Indices: Lifted Index",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "temperature_difference_between_ambient_air_and_air_lifted_adiabatically_from_the_surface",
+        "units": "K"
+      },
+      "SI": {
+        "description": "ABI L2+ Derived Stability Indices: Showalter Index",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "atmosphere_stability_showalter_index",
+        "units": "K"
+      },
+      "TT": {
+        "description": "ABI L2+ Derived Stability Indices: Total Totals Index",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "atmosphere_stability_total_totals_index",
+        "units": "K"
+      }
+    }
+  }
+}

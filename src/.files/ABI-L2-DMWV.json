@@ -1,0 +1,122 @@
+{
+  "ID": "ABI-L2-DMWV",
+  "name": "Advanced Baseline Imager Level 2 - Derived Motion Winds (Water Vapour)",
+  "aws": true,
+  "description": "Derives atmospheric motion vectors from clear-sky water vapour radiance tracers in ABI water vapour bands, providing wind speed, direction, pressure, and brightness temperature at each tracked feature. Like ABI-L2-DMW, winds are reported as point observations on an irregular grid.",
+  "16": {
+    "sector": {
+      "C": {"start": "2021-04-13", "end": "2025-04-07"},
+      "F": {"start": "2021-04-13", "end": "2025-04-07"},
+      "M": {"start": "2021-04-13", "end": "2025-04-07"}
+    },
+    "variables": {
+      "pressure": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's air pressure",
+        "standard_name": "air_pressure",
+        "units": "hPa"
+      },
+      "temperature": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's air temperature",
+        "standard_name": "air_temperature",
+        "units": "K"
+      },
+      "wind_direction": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's wind from direction measured positive clockwise from due north",
+        "standard_name": "wind_from_direction",
+        "units": "degree"
+      },
+      "wind_speed": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's wind speed",
+        "standard_name": "wind_speed",
+        "units": "m s**-1"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "C": {"start": "2021-04-13", "end": "2023-01-10"},
+      "F": {"start": "2021-04-13", "end": "2023-01-10"},
+      "M": {"start": "2021-04-13", "end": "2023-01-10"}
+    },
+    "variables": {
+      "pressure": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's air pressure",
+        "standard_name": "air_pressure",
+        "units": "hPa"
+      },
+      "temperature": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's air temperature",
+        "standard_name": "air_temperature",
+        "units": "K"
+      },
+      "wind_direction": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's wind from direction measured positive clockwise from due north",
+        "standard_name": "wind_from_direction",
+        "units": "degree"
+      },
+      "wind_speed": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's wind speed",
+        "standard_name": "wind_speed",
+        "units": "m s**-1"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2022-05-12", "end": "2026-05-13"},
+      "F": {"start": "2022-05-12", "end": "2026-05-13"},
+      "M": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "pressure": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's air pressure",
+        "standard_name": "air_pressure",
+        "units": "hPa"
+      },
+      "temperature": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's air temperature",
+        "standard_name": "air_temperature",
+        "units": "K"
+      },
+      "wind_direction": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's wind from direction measured positive clockwise from due north",
+        "standard_name": "wind_from_direction",
+        "units": "degree"
+      },
+      "wind_speed": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's wind speed",
+        "standard_name": "wind_speed",
+        "units": "m s**-1"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "C": {"start": "2024-10-16", "end": "2026-05-13"},
+      "F": {"start": "2024-10-16", "end": "2026-05-13"},
+      "M": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "pressure": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's air pressure",
+        "standard_name": "air_pressure",
+        "units": "hPa"
+      },
+      "temperature": {
+        "description": "ABI L2+ Derived Motion Winds: median brightness temperature of the clear-sky water vapor tracer",
+        "standard_name": "air_temperature",
+        "units": "K"
+      },
+      "wind_direction": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's wind from direction measured positive clockwise from due north",
+        "standard_name": "wind_from_direction",
+        "units": "degree"
+      },
+      "wind_speed": {
+        "description": "ABI L2+ Derived Motion Winds: wind vector's wind speed",
+        "standard_name": "wind_speed",
+        "units": "m s**-1"
+      }
+    }
+  }
+}

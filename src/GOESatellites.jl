@@ -12,6 +12,8 @@ import RegionGrids: nearest
 ## Modules Used
 using AWS
 using AWSS3
+using Glob
+using JSON
 using PrettyTables
 using RegionGrids
 
@@ -48,8 +50,9 @@ include("grid.jl")
 include("download.jl")
 include("save.jl")
 include("read.jl")
+include("list.jl")
 include("filesystem.jl")
+# include("tables.jl")
 include("backend.jl")
-include("tables.jl")
 
 end

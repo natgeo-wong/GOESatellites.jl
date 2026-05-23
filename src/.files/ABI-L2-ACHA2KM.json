@@ -1,0 +1,51 @@
+{
+  "ID": "ABI-L2-ACHA2KM",
+  "name": "Advanced Baseline Imager Level 2 - Cloud Top Height (2 km)",
+  "aws": true,
+  "description": "Provides cloud top height in metres at a uniform 2 km spatial resolution using the same ABI Cloud Height Algorithm as ABI-L2-ACHA. The coarser fixed grid simplifies multi-satellite compositing and downstream analysis.",
+  "16": {
+    "sector": {
+      "C": {"start": "2023-03-24", "end": "2025-04-07"},
+      "F": {"start": "2023-03-24", "end": "2025-04-07"},
+      "M": {"start": "2023-03-24", "end": "2025-04-07"}
+    },
+    "variables": {
+      "HT": {
+        "description": "ABI L2+ Cloud Top Height",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "geopotential_height_at_cloud_top",
+        "units": "m"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2023-03-28", "end": "2026-05-13"},
+      "F": {"start": "2023-03-28", "end": "2026-05-13"},
+      "M": {"start": "2023-03-28", "end": "2026-05-13"}
+    },
+    "variables": {
+      "HT": {
+        "description": "ABI L2+ Cloud Top Height",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "geopotential_height_at_cloud_top",
+        "units": "m"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "C": {"start": "2024-10-16", "end": "2026-05-13"},
+      "F": {"start": "2024-10-16", "end": "2026-05-13"},
+      "M": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "HT": {
+        "description": "ABI L2+ Cloud Top Height",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "geopotential_height_at_cloud_top",
+        "units": "m"
+      }
+    }
+  }
+}

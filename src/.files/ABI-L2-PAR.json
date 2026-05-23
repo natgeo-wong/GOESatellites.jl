@@ -1,0 +1,32 @@
+{
+  "ID": "ABI-L2-PAR",
+  "name": "Advanced Baseline Imager Level 2 - Photosynthetically Active Radiation",
+  "aws": true,
+  "description": "Estimates photosynthetically active radiation (PAR) at the Earth\u2019s surface in the 400\u2013700 nm waveband using ABI visible channels and a radiative transfer model. PAR is a key driver of photosynthesis and primary productivity in vegetation and ocean ecosystem models.",
+  "18": {
+    "sector": {
+      "F": {"start": "2025-04-30", "end": "2026-05-13"}
+    },
+    "variables": {
+      "PAR": {
+        "description": "ABI L2+ Photosynthetically Active Radiation",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "surface_downwelling_photosynthetic_radiative_flux_in_air",
+        "units": "W m**-2"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "F": {"start": "2025-05-13", "end": "2026-05-13"}
+    },
+    "variables": {
+      "PAR": {
+        "description": "ABI L2+ Photosynthetically Active Radiation",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "surface_downwelling_photosynthetic_radiative_flux_in_air",
+        "units": "W m**-2"
+      }
+    }
+  }
+}

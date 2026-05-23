@@ -22,8 +22,8 @@ function gdsfnc(
     ii  :: Int
 )
 
-    fol = joinpath(gds.path,yrmo2dir(dt))
-    fnc = "GOES$(gds.satellite)" * "-" * gds.product * "-" *
+    fol = joinpath(gds.path,gds.sectorID,yrmo2dir(dt))
+    fnc = "GOES$(gds.satellite)" * "-" * gds.product * "-" * gds.sectorID * "-" *
           ymd2str(dt) * "T" * @sprintf("%02d",hr) * "-step" * @sprintf("%02d",ii) * ".nc"
     return joinpath(fol,fnc)
 

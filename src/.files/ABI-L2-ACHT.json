@@ -1,0 +1,62 @@
+{
+  "ID": "ABI-L2-ACHT",
+  "name": "Advanced Baseline Imager Level 2 - Cloud Top Temperature",
+  "aws": true,
+  "description": "Provides the brightness temperature at the top of detected cloud layers in Kelvin, derived from ABI infrared channels. Available for Full Disk and Mesoscale sectors to support convective monitoring and cloud classification.",
+  "16": {
+    "sector": {
+      "F": {"start": "2019-12-06", "end": "2025-04-07"},
+      "M": {"start": "2019-12-06", "end": "2025-04-07"}
+    },
+    "variables": {
+      "TEMP": {
+        "description": "ABI L2+ Cloud Top Temperature",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "air_temperature_at_cloud_top",
+        "units": "K"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "F": {"start": "2019-12-06", "end": "2023-01-10"},
+      "M": {"start": "2019-12-06", "end": "2023-01-10"}
+    },
+    "variables": {
+      "TEMP": {
+        "description": "ABI L2+ Cloud Top Temperature",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "air_temperature_at_cloud_top",
+        "units": "K"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "F": {"start": "2022-05-12", "end": "2026-05-13"},
+      "M": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "TEMP": {
+        "description": "ABI L2+ Cloud Top Temperature",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "air_temperature_at_cloud_top",
+        "units": "K"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "F": {"start": "2024-10-16", "end": "2026-05-13"},
+      "M": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "TEMP": {
+        "description": "ABI L2+ Cloud Top Temperature",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "air_temperature_at_cloud_top",
+        "units": "K"
+      }
+    }
+  }
+}

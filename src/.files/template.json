@@ -1,0 +1,19 @@
+{
+  "ID": "",
+  "name": "",
+  "aws": false,
+  "description": "",
+  "<satelliteID>": {
+    "sector": {
+      "F": {"start": "<start_date>", "end": "<end_date>"}
+    },
+    "variables": {
+      "": {
+        "description": "",
+        "resolution": "",
+        "standard_name": "",
+        "units": ""
+      }
+    }
+  }
+}

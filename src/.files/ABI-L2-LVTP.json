@@ -1,0 +1,66 @@
+{
+  "ID": "ABI-L2-LVTP",
+  "name": "Advanced Baseline Imager Level 2 - Legacy Vertical Temperature Profile",
+  "aws": true,
+  "description": "Retrieves the vertical profile of atmospheric air temperature at 101 pressure levels using ABI infrared channels and background model fields. Together with the moisture profile from ABI-L2-LVMP, it provides a full thermodynamic sounding for each ABI pixel.",
+  "16": {
+    "sector": {
+      "C": {"start": "2019-12-06", "end": "2025-04-07"},
+      "F": {"start": "2019-12-06", "end": "2025-04-07"},
+      "M": {"start": "2019-12-06", "end": "2025-04-07"}
+    },
+    "variables": {
+      "LVT": {
+        "description": "ABI L2+ Legacy Vertical Temperature Profile provides air temperature at 101 pressure levels in the atmosphere",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "air_temperature",
+        "units": "K"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "C": {"start": "2019-12-06", "end": "2023-01-10"},
+      "F": {"start": "2019-12-06", "end": "2023-01-10"},
+      "M": {"start": "2019-12-06", "end": "2023-01-10"}
+    },
+    "variables": {
+      "LVT": {
+        "description": "ABI L2+ Legacy Vertical Temperature Profile provides air temperature at 101 pressure levels in the atmosphere",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "air_temperature",
+        "units": "K"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2022-05-12", "end": "2026-05-13"},
+      "F": {"start": "2022-05-12", "end": "2026-05-13"},
+      "M": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "LVT": {
+        "description": "ABI L2+ Legacy Vertical Temperature Profile provides air temperature at 101 pressure levels in the atmosphere",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "air_temperature",
+        "units": "K"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "C": {"start": "2024-10-16", "end": "2026-05-13"},
+      "F": {"start": "2024-10-16", "end": "2026-05-13"},
+      "M": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "LVT": {
+        "description": "ABI L2+ Legacy Vertical Temperature Profile provides air temperature at 101 pressure levels in the atmosphere",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "air_temperature",
+        "units": "K"
+      }
+    }
+  }
+}

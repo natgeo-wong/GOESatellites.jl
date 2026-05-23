@@ -56,3 +56,29 @@ function downloadgrid(
     return nothing
 
 end
+
+function nearest(
+    pnt :: Point2,
+    gds :: GOESDataset;
+    n   :: Int = 1
+)
+
+    glon,glat = grid(gds)
+    glon = glon[:]
+    glat = glat[:]
+    gx = cosd.(glon) .* cosd.(glat)
+    gy = sind.(glon) .* cosd.(glat)
+    gz = sind.(glat)
+
+    plon,plat = pnt[1],pnt[2]
+    px = cosd.(plon) * cosd.(plat)
+    py = sind.(plon) * cosd.(plat)
+    pz = sind.(plat)
+
+    if isone(n)
+        return argmin(abs.((gx.-px).^2 .+ (gy.-py).^2 .+ (gz.-pz).^2))
+    else
+        return findall(≤(n),sortperm(abs.((gx.-px).^2 .+ (gy.-py).^2 .+ (gz.-pz).^2)))
+    end
+
+end

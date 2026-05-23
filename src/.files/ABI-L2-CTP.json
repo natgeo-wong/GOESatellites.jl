@@ -1,0 +1,62 @@
+{
+  "ID": "ABI-L2-CTP",
+  "name": "Advanced Baseline Imager Level 2 - Cloud Top Pressure",
+  "aws": true,
+  "description": "Estimates cloud top pressure in hPa at standard ABI resolution using CO\u2082 slicing and infrared window techniques. Available for CONUS and Full Disk sectors, complementing the 2 km ACHP2KM product.",
+  "16": {
+    "sector": {
+      "C": {"start": "2019-12-06", "end": "2025-04-07"},
+      "F": {"start": "2019-12-06", "end": "2025-04-07"}
+    },
+    "variables": {
+      "PRES": {
+        "description": "ABI L2+ Cloud Top Pressure",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "air_pressure_at_cloud_top",
+        "units": "hPa"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "C": {"start": "2019-12-06", "end": "2023-01-10"},
+      "F": {"start": "2019-12-06", "end": "2023-01-10"}
+    },
+    "variables": {
+      "PRES": {
+        "description": "ABI L2+ Cloud Top Pressure",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "air_pressure_at_cloud_top",
+        "units": "hPa"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2022-05-12", "end": "2026-05-13"},
+      "F": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "PRES": {
+        "description": "ABI L2+ Cloud Top Pressure",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "air_pressure_at_cloud_top",
+        "units": "hPa"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "C": {"start": "2024-10-16", "end": "2026-05-13"},
+      "F": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "PRES": {
+        "description": "ABI L2+ Cloud Top Pressure",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "air_pressure_at_cloud_top",
+        "units": "hPa"
+      }
+    }
+  }
+}

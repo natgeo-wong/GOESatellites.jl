@@ -1,0 +1,44 @@
+{
+  "ID": "ABI-L2-VAA",
+  "name": "Advanced Baseline Imager Level 2 - Volcanic Ash",
+  "aws": true,
+  "description": "Detects volcanic ash clouds and retrieves ash cloud height and mass loading using ABI infrared split-window and mid-infrared channels. The product supports aviation hazard warnings and ash dispersion modelling in the event of volcanic eruptions.",
+  "16": {
+    "sector": {
+      "F": {"start": "2019-12-06", "end": "2020-12-02"}
+    },
+    "variables": {
+      "VAH": {
+        "description": "ABI L2+ Volcanic Ash: Ash Cloud Height",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "geopotential_height_at_volcanic_ash_cloud_top",
+        "units": "m"
+      },
+      "VAML": {
+        "description": "ABI L2+ Volcanic Ash: Ash Mass Loading",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "atmosphere_mass_content_of_volcanic_ash",
+        "units": "t km**-2"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "F": {"start": "2019-12-06", "end": "2020-12-02"}
+    },
+    "variables": {
+      "VAH": {
+        "description": "ABI L2+ Volcanic Ash: Ash Cloud Height",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "geopotential_height_at_volcanic_ash_cloud_top",
+        "units": "m"
+      },
+      "VAML": {
+        "description": "ABI L2+ Volcanic Ash: Ash Mass Loading",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "atmosphere_mass_content_of_volcanic_ash",
+        "units": "t km**-2"
+      }
+    }
+  }
+}

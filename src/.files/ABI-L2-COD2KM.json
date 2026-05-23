@@ -1,0 +1,45 @@
+{
+  "ID": "ABI-L2-COD2KM",
+  "name": "Advanced Baseline Imager Level 2 - Cloud Optical Depth (2 km)",
+  "aws": true,
+  "description": "Provides cloud optical depth at 640 nm at a uniform 2 km spatial resolution, using the same retrieval approach as ABI-L2-COD. The fixed 2 km grid enables straightforward multi-sector and multi-satellite comparisons.",
+  "16": {
+    "sector": {
+      "F": {"start": "2023-03-24", "end": "2025-04-07"}
+    },
+    "variables": {
+      "COD": {
+        "description": "ABI L2+ Cloud Optical Depth at 640 nm",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "atmosphere_optical_thickness_due_to_cloud",
+        "units": "0-1"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "F": {"start": "2023-03-28", "end": "2026-05-13"}
+    },
+    "variables": {
+      "COD": {
+        "description": "ABI L2+ Cloud Optical Depth at 640 nm",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "atmosphere_optical_thickness_due_to_cloud",
+        "units": "0-1"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "F": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "COD": {
+        "description": "ABI L2+ Cloud Optical Depth at 640 nm",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "atmosphere_optical_thickness_due_to_cloud",
+        "units": "0-1"
+      }
+    }
+  }
+}

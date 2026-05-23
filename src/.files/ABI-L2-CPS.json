@@ -1,0 +1,66 @@
+{
+  "ID": "ABI-L2-CPS",
+  "name": "Advanced Baseline Imager Level 2 - Cloud Particle Size",
+  "aws": true,
+  "description": "Retrieves the effective radius of cloud particles in micrometres using ABI shortwave infrared channels sensitive to cloud microphysics. Separate particle size fields may be reported for daytime and nighttime conditions depending on the algorithm version.",
+  "16": {
+    "sector": {
+      "C": {"start": "2019-12-06", "end": "2025-04-07"},
+      "F": {"start": "2019-12-06", "end": "2025-04-07"},
+      "M": {"start": "2019-12-06", "end": "2025-04-07"}
+    },
+    "variables": {
+      "PSD": {
+        "description": "ABI L2+ Cloud Particle Size",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "effective_radius_of_cloud_condensed_water_particles_at_cloud_top",
+        "units": "um"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "C": {"start": "2019-12-06", "end": "2023-01-10"},
+      "F": {"start": "2019-12-06", "end": "2023-01-10"},
+      "M": {"start": "2019-12-06", "end": "2023-01-10"}
+    },
+    "variables": {
+      "PSD": {
+        "description": "ABI L2+ Cloud Particle Size",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "effective_radius_of_cloud_condensed_water_particles_at_cloud_top",
+        "units": "um"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2022-05-12", "end": "2026-05-13"},
+      "F": {"start": "2022-05-12", "end": "2026-05-13"},
+      "M": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "PSD": {
+        "description": "ABI L2+ Cloud Particle Size",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "effective_radius_of_cloud_condensed_water_particles_at_cloud_top",
+        "units": "um"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "C": {"start": "2024-10-16", "end": "2026-05-13"},
+      "F": {"start": "2024-10-16", "end": "2026-05-13"},
+      "M": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "CPS": {
+        "description": "ABI L2+ Cloud Particle Size",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "effective_radius_of_cloud_condensed_water_particles_at_cloud_top",
+        "units": "um"
+      }
+    }
+  }
+}

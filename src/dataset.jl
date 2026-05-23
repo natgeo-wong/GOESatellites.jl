@@ -1,7 +1,7 @@
 """
-    GOESDataset{ST<:AbstractString, DT<:TimeType}
+    GOESAmazon{ST<:AbstractString, DT<:TimeType} <: GOESDataset
 
-Specifies an GOES (Geostationary Operational Environmental Satellite) dataset with the following fields:
+Specifies a downloadable (from Amazon Web Services) GOES (Geostationary Operational Environmental Satellite) dataset with the following fields:
 * `satellite` : An `Int` specifying the satellite ID (valid satellites are GOES 16-19)
 * `bucket`    : An `AbstractString` specifying the S3 bucket name (derived from the satellite ID)
 * `product`   : An `AbstractString` specifying the product name
@@ -12,10 +12,11 @@ Specifies an GOES (Geostationary Operational Environmental Satellite) dataset wi
 * `start`     : An `TimeType` specifying the default start date for the data query
 * `stop`      : An `TimeType` specifying the default end date for the data query
 """
-struct GOESDataset{ST<:AbstractString, DT<:TimeType}
+struct GOESAmazon{ST<:AbstractString, DT<:TimeType} <: GOESDataset
     satellite :: Int
     bucket    :: ST
     product   :: ST
+    name      :: ST
     path      :: ST
     mask      :: ST
     sector    :: ST
@@ -25,41 +26,129 @@ struct GOESDataset{ST<:AbstractString, DT<:TimeType}
 end
 
 """
-    GOESDataset(; stream :: ST,
+    GOESCustom{ST<:AbstractString, DT<:TimeType} <: GOESDataset
+
+Specifies a custom GOES (Geostationary Operational Environmental Satellite) dataset calculated from available GOES data that can be downloaded using the `GOESAmazon` type:
+* `satellite` : An `Int` specifying the satellite ID (valid satellites are GOES 16-19)
+* `bucket`    : An `AbstractString` specifying the S3 bucket name (derived from the satellite ID)
+* `product`   : An `AbstractString` specifying the product name
+* `path`      : An `AbstractString` specifying the local directory path where data will be stored
+* `mask`      : An `AbstractString` specifying the directory path for storing lon/lat mask files
+* `sector`    : An `AbstractString` specifying the sector name
+* `sectorID`  : An `AbstractString` specifying the sector ID
+* `start`     : An `TimeType` specifying the default start date for the data query
+* `stop`      : An `TimeType` specifying the default end date for the data query
+"""
+struct GOESCustom{ST<:AbstractString, DT<:TimeType} <: GOESDataset
+    satellite :: Int
+    bucket    :: ST
+    product   :: ST
+    name      :: ST
+    path      :: ST
+    mask      :: ST
+    sector    :: ST
+    sectorID  :: ST
+    start     :: DT
+    stop      :: DT
+end
+
+"""
+    GOESDataset(
+        product :: ST;
         ID      :: Int,
-        product :: ST,
         path    :: ST = goespath(homedir()),
     ) where {ST <: AbstractString} -> GOESDataset{ST,DT}
 
-Create an `GOESDataset` specification for querying and downloading GOES data.
+Retrieve the details of a `GOESDataset` specification for querying and downloading GOES data.
+
+Arguments
+=========
+* `ID`      : An `Int` specifying the satellite ID (valid satellites are GOES 16-19)
 
 Keyword Arguments
 =================
-* `ID`      : An `Int` specifying the satellite ID (valid satellites are GOES 16-19)
 * `product` : An `AbstractString` specifying the product name
 * `path`    : An `AbstractString` specifying the data directory path where downloaded data will be, with the default given by `goespath(homedir())`
 """
-function GOESDataset(;
-    ID      :: Int,
-    product :: ST,
-    path    :: ST = goespath(homedir()),
+function GOESDataset(
+    product   :: ST;
+    sector    :: ST = "F",
+    satellite :: Int,
+    path      :: ST = goespath(homedir()),
+    verbose   :: Bool = false,
 ) where {ST <: AbstractString}
 
-    checksatellite(ID)
+    isproduct(product)
 
-    mask = joinpath(goespath(path),"mask")
-    if !isdir(mask); mkpath(mask) end
+    IDs,goespaths = listall(goespath(path),verbose)
+    ii = findall(ID.==IDs)[1]
+    details = JSON.parse(read(joinpath(goespaths[ii],"$ID.json"),String))
 
-    path = joinpath(goespath(path),product)
-    if !isdir(path); mkpath(path) end
+    checkvalid(details,satellite,sector)
 
-    return GOESDataset{ST,Date}(
-        ID, "noaa-goes$ID",product, path, mask,
-        checksector(product), checksectorID(product),
-        datestart(ID), datestop(ID)
-    )
+    mask = joinpath(goespath(path),"mask");  if !isdir(mask); mkpath(mask) end
+    path = joinpath(goespath(path),product); if !isdir(path); mkpath(path) end
+
+    if details.aws
+
+        return GOESAmazon{ST,Date}(
+            satellite, "noaa-goes$satellite", product, details["name"], path, mask,
+            sectorname(sector), sector,
+            parse(Date,details["$satellite"]["sector"]["$sector"]["start"]),
+            parse(Date,details["$satellite"]["sector"]["$sector"]["stop"])
+        )
+
+    else
+
+        return GOESCustom{ST,Date}(
+            satellite, "noaa-goes$satellite", product, details["name"], path, mask,
+            sectorname(sector), sector,
+            parse(Date,details["$satellite"]["sector"]["$sector"]["start"]),
+            parse(Date,details["$satellite"]["sector"]["$sector"]["stop"])
+        )
+
+    end
 
 end
+
+# """
+#     GOESDataset(
+#         product :: ST;
+#         ID      :: Int,
+#         path    :: ST = goespath(homedir()),
+#     ) where {ST <: AbstractString} -> GOESDataset{ST,DT}
+
+# Retrieve the details of a `GOESDataset` specification for querying and downloading GOES data.
+
+# Arguments
+# =========
+# * `ID`      : An `Int` specifying the satellite ID (valid satellites are GOES 16-19)
+
+# Keyword Arguments
+# =================
+# * `product` : An `AbstractString` specifying the product name
+# * `path`    : An `AbstractString` specifying the data directory path where downloaded data will be, with the default given by `goespath(homedir())`
+# """
+# function GOESDataset(;
+#     product :: ST,
+#     name    :: ST,
+#     path    :: ST = goespath(homedir()),
+#     start   :: Date = Date(2000,1,1),
+#     stop    :: Date = Date(2000,1,1)
+# ) where {ST <: AbstractString}
+
+#     mask = joinpath(goespath(path),"mask")
+#     if !isdir(mask); mkpath(mask) end
+
+#     path = joinpath(goespath(path),product)
+#     if !isdir(path); mkpath(path) end
+
+#     return GOESCustom{ST,Date}(
+#         0, "N/A", product, name, path, mask,
+#         "N/A", "N/A", start, stop
+#     )
+
+# end
 
 function show(
     io  :: IO,
@@ -82,54 +171,28 @@ end
 
 ###
 
-checksatellite(ID :: Int) = ID > 15 ? nothing : error("$(modulelog()) - Amazon Web Services does not provided GOES Data for satellites before GOES-16")
+function checkvalid(
+    details   :: JSON.Object,
+    satellite :: Int,
+    sector    :: AbstractString
+)
 
-checksectorID(product :: AbstractString) = string(product[end])
+    if !haskey(details, "$satellite")
+        error("$(modulelog()) - GOES-$satellite did not produce the dataset $product")
+    end
 
-function checksector(product :: AbstractString)
-
-    sID = checksectorID(product)
-
-    if sID == "C"
-        return "CONUS"
-    elseif sID == "F"
-        return "Full Disk"
-    elseif sID == "M"
-        return "Mesoscale"
-    else
-        error("$(modulelog()) - Sector ID not recognized")
+    if !haskey(details["$satellite"]["sector"], "$sector")
+        error("$(modulelog()) - GOES-$satellite does not have the $sector Sector defined for the $product dataset")
     end
 
 end
 
-function datestart(satellite :: Int)
-
-    if satellite == 16
-        return Date(2017,12,1)
-    elseif satellite == 17
-        return Date(2019,2,1)
-    elseif satellite == 18
-        return Date(2023,1,1)
-    elseif satellite == 19
-        return Date(2025,4,1)
-    else
-        error("$(modulelog()) - Amazon Web Services does not provided GOES Data for satellites before GOES-16")
-    end
-    
-end
-
-function datestop(satellite :: Int)
-
-    if satellite == 16
-        return Date(2025,5,1)
-    elseif satellite == 17
-        return Date(2023,4,7)
-    elseif satellite == 18
-        return now() - Month(3)
-    elseif satellite == 19
-        return now() - Month(3)
-    else
-        error("$(modulelog()) - Amazon Web Services does not provided GOES Data for satellites before GOES-16")
-    end
-    
+sectorname(sectorID :: AbstractString) = if sectorID == "C"
+    return "CONUS"
+elseif sectorID == "F"
+    return "Full Disk"
+elseif sectorID == "M"
+    return "Mesoscale"
+else
+    error("$(modulelog()) - Sector ID not recognized")
 end

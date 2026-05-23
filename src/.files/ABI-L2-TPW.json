@@ -1,0 +1,66 @@
+{
+  "ID": "ABI-L2-TPW",
+  "name": "Advanced Baseline Imager Level 2 - Total Precipitable Water",
+  "aws": true,
+  "description": "Estimates the total column-integrated water vapour in millimetres by combining ABI water vapour and infrared window channels with background model profiles. Total precipitable water is a key variable for weather forecasting, severe storm analysis, and atmospheric river monitoring.",
+  "16": {
+    "sector": {
+      "C": {"start": "2019-12-04", "end": "2025-04-07"},
+      "F": {"start": "2019-12-04", "end": "2025-04-07"},
+      "M": {"start": "2019-12-04", "end": "2025-04-07"}
+    },
+    "variables": {
+      "TPW": {
+        "description": "ABI L2+ Total Precipitable Water",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "lwe_thickness_of_atmosphere_mass_content_of_water_vapor",
+        "units": "mm"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "C": {"start": "2019-12-04", "end": "2023-01-10"},
+      "F": {"start": "2019-12-04", "end": "2023-01-10"},
+      "M": {"start": "2019-12-04", "end": "2023-01-10"}
+    },
+    "variables": {
+      "TPW": {
+        "description": "ABI L2+ Total Precipitable Water",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "lwe_thickness_of_atmosphere_mass_content_of_water_vapor",
+        "units": "mm"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2022-05-12", "end": "2026-05-13"},
+      "F": {"start": "2022-05-12", "end": "2026-05-13"},
+      "M": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "TPW": {
+        "description": "ABI L2+ Total Precipitable Water",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "lwe_thickness_of_atmosphere_mass_content_of_water_vapor",
+        "units": "mm"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "C": {"start": "2024-10-16", "end": "2026-05-13"},
+      "F": {"start": "2024-10-16", "end": "2026-05-13"},
+      "M": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "TPW": {
+        "description": "ABI L2+ Total Precipitable Water",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "lwe_thickness_of_atmosphere_mass_content_of_water_vapor",
+        "units": "mm"
+      }
+    }
+  }
+}

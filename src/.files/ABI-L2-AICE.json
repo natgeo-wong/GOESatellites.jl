@@ -1,0 +1,122 @@
+{
+  "ID": "ABI-L2-AICE",
+  "name": "Advanced Baseline Imager Level 2 - Sea and Lake Ice",
+  "aws": true,
+  "description": "Retrieves sea and lake ice concentration, surface temperature, and a binary ice mask from ABI thermal infrared channels. A product quality indicator accompanies each pixel to quantify retrieval confidence.",
+  "16": {
+    "sector": {
+      "F": {"start": "2021-02-25", "end": "2025-04-07"}
+    },
+    "variables": {
+      "IceConc": {
+        "description": "ABI L2 Cryosphere Ice Concentration",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "ice_concentration",
+        "units": "%"
+      },
+      "Mask": {
+        "description": "ABI L2 Cryosphere Ice Mask",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "ice_mask",
+        "units": "0-1"
+      },
+      "PQI": {
+        "description": "ABI L2 Cryosphere Ice Concentration product quality indicator",
+        "units": "0-1"
+      },
+      "Temp": {
+        "description": "ABI L2 Cryosphere Ice Surface Temperature",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "ice_temperature",
+        "units": "K"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "F": {"start": "2021-02-26", "end": "2023-01-10"}
+    },
+    "variables": {
+      "IceConc": {
+        "description": "ABI L2 Cryosphere Ice Concentration",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "ice_concentration",
+        "units": "%"
+      },
+      "Mask": {
+        "description": "ABI L2 Cryosphere Ice Mask",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "ice_mask",
+        "units": "0-1"
+      },
+      "PQI": {
+        "description": "ABI L2 Cryosphere Ice Concentration product quality indicator",
+        "units": "0-1"
+      },
+      "Temp": {
+        "description": "ABI L2 Cryosphere Ice Surface Temperature",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "ice_temperature",
+        "units": "K"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "F": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "IceConc": {
+        "description": "ABI L2 Cryosphere Ice Concentration",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "ice_concentration",
+        "units": "%"
+      },
+      "Mask": {
+        "description": "ABI L2 Cryosphere Ice Mask",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "ice_mask",
+        "units": "0-1"
+      },
+      "PQI": {
+        "description": "ABI L2 Cryosphere Ice Concentration product quality indicator",
+        "units": "0-1"
+      },
+      "Temp": {
+        "description": "ABI L2 Cryosphere Ice Surface Temperature",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "ice_temperature",
+        "units": "K"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "F": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "IceConc": {
+        "description": "ABI L2 Cryosphere Ice Concentration",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "ice_concentration",
+        "units": "%"
+      },
+      "Mask": {
+        "description": "ABI L2 Cryosphere Ice Mask",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "ice_mask",
+        "units": "0-1"
+      },
+      "PQI": {
+        "description": "ABI L2 Cryosphere Ice Concentration product quality indicator",
+        "units": "0-1"
+      },
+      "Temp": {
+        "description": "ABI L2 Cryosphere Ice Surface Temperature",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "ice_temperature",
+        "units": "K"
+      }
+    }
+  }
+}

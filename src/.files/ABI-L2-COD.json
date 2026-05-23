@@ -1,0 +1,62 @@
+{
+  "ID": "ABI-L2-COD",
+  "name": "Advanced Baseline Imager Level 2 - Cloud Optical Depth",
+  "aws": true,
+  "description": "Retrieves cloud optical depth at 640 nm by combining ABI visible and near-infrared reflectances with a lookup-table radiative transfer approach. Available for CONUS and Full Disk sectors to support cloud radiative effect and precipitation retrievals.",
+  "16": {
+    "sector": {
+      "C": {"start": "2017-06-08", "end": "2025-04-07"},
+      "F": {"start": "2019-12-03", "end": "2025-04-07"}
+    },
+    "variables": {
+      "COD": {
+        "description": "ABI L2+ Cloud Optical Depth at 640 nm",
+        "resolution": "y: 0.000112 rad x: 0.000112 rad",
+        "standard_name": "atmosphere_optical_thickness_due_to_cloud",
+        "units": "0-1"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "C": {"start": "2018-08-27", "end": "2023-01-10"},
+      "F": {"start": "2019-12-03", "end": "2023-01-10"}
+    },
+    "variables": {
+      "COD": {
+        "description": "ABI L2+ Cloud Optical Depth at 640 nm",
+        "resolution": "y: 0.000112 rad x: 0.000112 rad",
+        "standard_name": "atmosphere_optical_thickness_due_to_cloud",
+        "units": "0-1"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2022-05-12", "end": "2026-05-13"},
+      "F": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "COD": {
+        "description": "ABI L2+ Cloud Optical Depth at 640 nm",
+        "resolution": "y: 0.000112 rad x: 0.000112 rad",
+        "standard_name": "atmosphere_optical_thickness_due_to_cloud",
+        "units": "0-1"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "C": {"start": "2024-10-16", "end": "2026-05-13"},
+      "F": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "COD": {
+        "description": "ABI L2+ Cloud Optical Depth at 640 nm",
+        "resolution": "y: 0.000112 rad x: 0.000112 rad",
+        "standard_name": "atmosphere_optical_thickness_due_to_cloud",
+        "units": "0-1"
+      }
+    }
+  }
+}

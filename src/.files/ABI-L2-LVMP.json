@@ -1,0 +1,66 @@
+{
+  "ID": "ABI-L2-LVMP",
+  "name": "Advanced Baseline Imager Level 2 - Legacy Vertical Moisture Profile",
+  "aws": true,
+  "description": "Retrieves the vertical profile of atmospheric relative humidity at 101 pressure levels from the surface to the top of the atmosphere using ABI water vapour channels and ancillary model data. The profile supports numerical weather prediction applications and atmospheric sounding studies.",
+  "16": {
+    "sector": {
+      "C": {"start": "2019-12-06", "end": "2025-04-07"},
+      "F": {"start": "2019-12-06", "end": "2025-04-07"},
+      "M": {"start": "2019-12-06", "end": "2025-04-07"}
+    },
+    "variables": {
+      "LVM": {
+        "description": "ABI L2+ Legacy Vertical Moisture Profile provides relative humidity at 101 pressure levels in the atmosphere",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "relative_humidity",
+        "units": "%"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "C": {"start": "2019-12-06", "end": "2023-01-10"},
+      "F": {"start": "2019-12-06", "end": "2023-01-10"},
+      "M": {"start": "2019-12-06", "end": "2023-01-10"}
+    },
+    "variables": {
+      "LVM": {
+        "description": "ABI L2+ Legacy Vertical Moisture Profile provides relative humidity at 101 pressure levels in the atmosphere",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "relative_humidity",
+        "units": "%"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2022-05-12", "end": "2026-05-13"},
+      "F": {"start": "2022-05-12", "end": "2026-05-13"},
+      "M": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "LVM": {
+        "description": "ABI L2+ Legacy Vertical Moisture Profile provides relative humidity at 101 pressure levels in the atmosphere",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "relative_humidity",
+        "units": "%"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "C": {"start": "2024-10-16", "end": "2026-05-13"},
+      "F": {"start": "2024-10-16", "end": "2026-05-13"},
+      "M": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "LVM": {
+        "description": "ABI L2+ Legacy Vertical Moisture Profile provides relative humidity at 101 pressure levels in the atmosphere",
+        "resolution": "y: 0.000280 rad x: 0.000280 rad",
+        "standard_name": "relative_humidity",
+        "units": "%"
+      }
+    }
+  }
+}

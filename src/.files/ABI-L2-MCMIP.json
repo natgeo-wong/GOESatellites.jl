@@ -1,0 +1,426 @@
+{
+  "ID": "ABI-L2-MCMIP",
+  "name": "Advanced Baseline Imager Level 2 - Multi-Channel Cloud and Moisture Imagery",
+  "aws": true,
+  "description": "Delivers calibrated imagery for all 16 ABI spectral channels simultaneously, combining visible reflectance factors (bands 1\u20136) and thermal infrared brightness temperatures (bands 7\u201316) in a single product. The multi-channel dataset supports RGB composite generation, fog detection, and cloud classification workflows.",
+  "16": {
+    "sector": {
+      "C": {"start": "2017-02-28", "end": "2025-04-07"},
+      "F": {"start": "2017-02-28", "end": "2025-04-07"},
+      "M": {"start": "2017-02-28", "end": "2025-04-07"}
+    },
+    "variables": {
+      "CMI_C01": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C02": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C03": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C04": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C05": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C06": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C07": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C08": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C09": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C10": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C11": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C12": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C13": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C14": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C15": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C16": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "C": {"start": "2018-08-28", "end": "2023-01-10"},
+      "F": {"start": "2018-08-28", "end": "2023-01-10"},
+      "M": {"start": "2018-08-28", "end": "2023-01-10"}
+    },
+    "variables": {
+      "CMI_C01": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C02": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C03": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C04": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C05": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C06": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C07": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C08": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C09": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C10": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C11": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C12": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C13": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C14": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C15": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C16": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "C": {"start": "2022-05-12", "end": "2026-05-13"},
+      "F": {"start": "2022-05-12", "end": "2026-05-13"},
+      "M": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "CMI_C01": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C02": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C03": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C04": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C05": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C06": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C07": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C08": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C09": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C10": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C11": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C12": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C13": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C14": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C15": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C16": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "C": {"start": "2024-10-11", "end": "2026-05-13"},
+      "F": {"start": "2024-10-11", "end": "2026-05-13"},
+      "M": {"start": "2024-10-18", "end": "2026-05-13"}
+    },
+    "variables": {
+      "CMI_C01": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C02": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C03": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C04": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C05": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C06": {
+        "description": "ABI Cloud and Moisture Imagery reflectance factor",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_lambertian_equivalent_albedo_multiplied_by_cosine_solar_zenith_angle",
+        "units": "0-1"
+      },
+      "CMI_C07": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C08": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C09": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C10": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C11": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C12": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C13": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C14": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C15": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      },
+      "CMI_C16": {
+        "description": "ABI Cloud and Moisture Imagery brightness temperature at top of atmosphere",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "toa_brightness_temperature",
+        "units": "K"
+      }
+    }
+  }
+}

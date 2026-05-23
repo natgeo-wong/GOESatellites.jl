@@ -1,0 +1,58 @@
+{
+  "ID": "ABI-L2-RRQPE",
+  "name": "Advanced Baseline Imager Level 2 - Rainfall Rate Quantitative Precipitation Estimate",
+  "aws": true,
+  "description": "Estimates instantaneous rainfall rate in mm hr\u207b\u00b9 using a multi-channel ABI algorithm that combines visible, near-infrared, and infrared channels. The product provides quantitative precipitation estimates at high temporal frequency to support hydrology, flash flood guidance, and disaster response.",
+  "16": {
+    "sector": {
+      "F": {"start": "2019-12-04", "end": "2025-04-07"}
+    },
+    "variables": {
+      "RRQPE": {
+        "description": "ABI L2+ Rainfall Rate - Quantitative Prediction Estimate",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "rainfall_rate",
+        "units": "mm hr**-1"
+      }
+    }
+  },
+  "17": {
+    "sector": {
+      "F": {"start": "2019-12-04", "end": "2023-01-10"}
+    },
+    "variables": {
+      "RRQPE": {
+        "description": "ABI L2+ Rainfall Rate - Quantitative Prediction Estimate",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "rainfall_rate",
+        "units": "mm hr**-1"
+      }
+    }
+  },
+  "18": {
+    "sector": {
+      "F": {"start": "2022-05-12", "end": "2026-05-13"}
+    },
+    "variables": {
+      "RRQPE": {
+        "description": "ABI L2+ Rainfall Rate - Quantitative Precipitation Estimate",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "rainfall_rate",
+        "units": "mm hr**-1"
+      }
+    }
+  },
+  "19": {
+    "sector": {
+      "F": {"start": "2024-10-16", "end": "2026-05-13"}
+    },
+    "variables": {
+      "RRQPE": {
+        "description": "ABI L2+ Rainfall Rate - Quantitative Precipitation Estimate",
+        "resolution": "y: 0.000056 rad x: 0.000056 rad",
+        "standard_name": "rainfall_rate",
+        "units": "mm hr**-1"
+      }
+    }
+  }
+}
