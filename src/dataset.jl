@@ -78,11 +78,9 @@ function GOESDataset(
     verbose   :: Bool = false,
 ) where {ST <: AbstractString}
 
-    isproduct(product)
-
     IDs,goespaths = listall(goespath(path),verbose)
-    ii = findall(ID.==IDs)[1]
-    details = JSON.parse(read(joinpath(goespaths[ii],"$ID.json"),String))
+    ii = findall(product.==IDs)[1]
+    details = JSON.parse(read(joinpath(goespaths[ii],"$product.json"),String))
 
     checkvalid(details,satellite,sector)
 
@@ -95,7 +93,7 @@ function GOESDataset(
             satellite, "noaa-goes$satellite", product, details["name"], path, mask,
             sectorname(sector), sector,
             parse(Date,details["$satellite"]["sector"]["$sector"]["start"]),
-            parse(Date,details["$satellite"]["sector"]["$sector"]["stop"])
+            parse(Date,details["$satellite"]["sector"]["$sector"]["end"])
         )
 
     else
@@ -104,7 +102,7 @@ function GOESDataset(
             satellite, "noaa-goes$satellite", product, details["name"], path, mask,
             sectorname(sector), sector,
             parse(Date,details["$satellite"]["sector"]["$sector"]["start"]),
-            parse(Date,details["$satellite"]["sector"]["$sector"]["stop"])
+            parse(Date,details["$satellite"]["sector"]["$sector"]["end"])
         )
 
     end
