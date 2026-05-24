@@ -54,21 +54,25 @@ end
 
 """
     GOESDataset(
-        product :: ST;
-        ID      :: Int,
-        path    :: ST = goespath(homedir()),
+        product   :: ST;
+        sector    :: ST = "F",
+        satellite :: Int,
+        path      :: ST = goespath(homedir()),
+        verbose   :: Bool = false,
     ) where {ST <: AbstractString} -> GOESDataset{ST,DT}
 
 Retrieve the details of a `GOESDataset` specification for querying and downloading GOES data.
 
 Arguments
 =========
-* `ID`      : An `Int` specifying the satellite ID (valid satellites are GOES 16-19)
+* `product` : An `AbstractString` specifying the GOES Dataset identifier
 
 Keyword Arguments
 =================
-* `product` : An `AbstractString` specifying the product name
-* `path`    : An `AbstractString` specifying the data directory path where downloaded data will be, with the default given by `goespath(homedir())`
+* `sector`    : An `AbstractString` specifying the sector ID (e.g., "F" for Full Disk)
+* `satellite` : An `AbstractString` specifying the satellite ID (e.g., 16 for GOES-16)
+* `path`      : An `AbstractString` specifying the data directory path where downloaded data will be, with the default given by `goespath(homedir())`
+* `verbose`   : If `true`, display additional logging output
 """
 function GOESDataset(
     product   :: ST;
@@ -109,6 +113,24 @@ function GOESDataset(
 
 end
 
+"""
+    GOEStemplate(
+        product   :: ST;
+        path      :: ST,
+        overwrite :: Bool = false
+    ) where {ST <: AbstractString}
+
+Retrieve the details of a `GOESDataset` specification for querying and downloading GOES data.
+
+Arguments
+=========
+* `product` : An `AbstractString` specifying the GOES Dataset identifier
+
+Keyword Arguments
+=================
+* `path`      : An `AbstractString` specifying the data directory path where downloaded data will be, with the default given by `goespath(homedir())`
+* `overwrite` : If `true`, overwrite existing dataset detail file in the `path`
+"""
 function GOEStemplate(
     product   :: ST;
     path      :: ST,
