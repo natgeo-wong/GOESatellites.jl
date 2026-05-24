@@ -109,6 +109,25 @@ function GOESDataset(
 
 end
 
+function GOEStemplate(
+    product   :: ST;
+    path      :: ST,
+    overwrite :: Bool = false
+) where {ST <: AbstractString}
+
+    path = goespath(path)
+    if !isfile(joinpath(path,"$product.json")) || overwrite
+        cp(
+            joinpath(goesdir,"template.json"), 
+            joinpath(path,"$product.json")
+        )
+    else
+        @warn "The .json details file for the $product Dataset already exists in $path, set overwrite=true to replace it"
+    end
+    return nothing
+
+end
+
 # """
 #     GOESDataset(
 #         product :: ST;
