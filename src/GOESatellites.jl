@@ -7,12 +7,13 @@ using Printf
 using Statistics
 
 import Base: show, read, download
-import RegionGrids: nearest
+import RegionGrids: RegionGrid, nearest
 
 ## Modules Used
 using AWS
 using AWSS3
 using Glob
+using JLD2
 using JSON
 using PrettyTables
 using RegionGrids
@@ -28,7 +29,7 @@ export
         GOESDataset,
 
         download, read, grid,
-        nearest,
+        RegionGrid, nearest,
 
         tableGOESDatasets, tableGOESVariables, tableGOESSatellites
 

@@ -57,6 +57,23 @@ function downloadgrid(
 
 end
 
+function RegionGrid(
+    gds :: GOESDataset,
+    geo :: GeoRegion
+)
+
+    gID = joinpath(gds.path,"$(gds.satellite)$(gds.sectorID)-$(geo.ID).jld2")
+    if isfile(gID)
+        return load_object(gID)
+    else
+        lon,lat = grid(gds)
+        ggrd = RegionGrid(geo,Point2.(lon,lat))
+        save_object(gID,ggrd)
+        return ggrd
+    end
+
+end
+
 function nearest(
     pnt :: Point2,
     gds :: GOESDataset;

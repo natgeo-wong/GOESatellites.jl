@@ -97,8 +97,8 @@ function download(
 	aws = AWSConfig(; creds=nothing, region="us-east-1")
 
 	@info "$(modulelog()) - Downloading GOES-$(gds.satellite) $(gds.product) data for $(gvar) in the $(geo.name) GeoRegion from $(start) to $(stop)"
-	lon,lat = grid(gds); ntlon,ntlat = size(lon)
-	ggrd  = RegionGrid(geo,Point2.(lon,lat)); nlon,nlat = size(ggrd.lon)
+	lon,_ = grid(gds);           ntlon,ntlat = size(lon)
+	ggrd  = RegionGrid(gds,geo); nlon,nlat   = size(ggrd.lon)
 	
 	@info "$(modulelog()) - Preallocating temporary and final data arrays ..."
 	tdata = zeros(NT,ntlon,ntlat)
