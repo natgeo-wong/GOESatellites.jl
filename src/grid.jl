@@ -64,6 +64,7 @@ function RegionGrid(
 
     gID = joinpath(gds.path,"$(gds.satellite)$(gds.sectorID)-$(geo.ID).jld2")
     if isfile(gID)
+        @info "$(modulelog()) - Extracting RegionGrid for GeoRegion $(geo.name) created from the GOES Satellite $(gds.satellite) Sector $(gds.sectorID) Grid from the existing file $gID ..."
         return load_object(gID)
     else
         lon,lat = grid(gds)
