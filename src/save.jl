@@ -55,7 +55,7 @@ function save(
 	nclon[:,:] = ggrd.lon
 	nclat[:,:] = ggrd.lat
 	nct[:] = t
-	ncvar[:,:,:] = data
+	ncvar.var[:,:,:] = data
 
 	close(pds)
 
