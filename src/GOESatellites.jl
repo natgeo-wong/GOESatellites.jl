@@ -26,7 +26,7 @@ using Reexport
 
 ## Exporting the following functions:
 export
-        GOESDataset,
+        GOESDataset, GOESDetails, GOEStemplate,
 
         download, read, grid,
         RegionGrid, nearest,

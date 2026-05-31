@@ -113,6 +113,33 @@ function GOESDataset(
 
 end
 
+function GOESDetails(
+    product :: ST;
+    path    :: ST = goespath(homedir()),
+    verbose :: Bool = false,
+) where {ST <: AbstractString}
+
+    IDs,goespaths = listall(goespath(path),verbose)
+    ii = findall(product.==IDs)[1]
+    return JSON.parse(read(joinpath(goespaths[ii],"$product.json"),String))
+
+end
+
+function GOESDataset(
+    details   :: JSON.Object;
+    path      :: ST = goespath(homedir()),
+    overwrite :: Bool = false
+) where {ST <: AbstractString}
+
+    fID = joinpath(goespath(path),"$(details.ID).json")
+    if !isfile(fID) || overwrite
+        JSON.json(io,details,pretty=2)
+    else
+        error("$(modulelog()) - A .json details file for the $(details.ID) Dataset already exists in $path, set overwrite=true to replace it")
+    end
+
+end
+
 """
     GOEStemplate(
         product   :: ST;
