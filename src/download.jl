@@ -106,10 +106,14 @@ function download(
 	t     = zeros(DateTime,288)
 	vdict = Vector{Dict}(undef,2)
 
+	flush(stderr)
+
 	for dt in start : Day(1) : stop
 
+		@info "$(modulelog()) - Downloading GOES-$(gds.satellite) $(gds.product) data for $(gvar) in the $(geo.name) GeoRegion during $(dt)"; flush(stderr)
 		fnc = gdsfnc(gds,geo,gvar,dt)
 		jj = 0
+		
 		if overwrite || !isfile(fnc)
 
 			yr = year(dt)
