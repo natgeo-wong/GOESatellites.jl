@@ -7,7 +7,7 @@ using Printf
 using Statistics
 
 import Base: show, read, download
-import RegionGrids: RegionGrid, nearest
+import RegionGrids: RegionGrid, nearest, extract
 
 ## Modules Used
 using AWS
@@ -28,7 +28,7 @@ using Reexport
 export
         GOESDataset, GOESDetails, GOEStemplate,
 
-        download, read, grid,
+        download, read, grid, extract,
         RegionGrid, nearest,
 
         tableGOESDatasets, tableGOESVariables, tableGOESSatellites
@@ -49,6 +49,7 @@ goespath(path) = splitpath(path)[end] !== "GOES" ? joinpath(path,"GOES") : path
 include("dataset.jl")
 include("grid.jl")
 include("download.jl")
+include("extract.jl")
 include("save.jl")
 include("read.jl")
 include("list.jl")
