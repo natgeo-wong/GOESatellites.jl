@@ -5,3 +5,4 @@ GOESatellites = "bad11bc4-67e9-4288-85cb-de767d6e4463"
 
 [compat]
 Documenter = "1"
+DocumenterVitepress = "0.3.5"
